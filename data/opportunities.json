@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "ubu-001",
+    "title": "Junior Full-Stack Web Developer",
+    "organisation": "Plum Systems Africa",
+    "category": "Jobs",
+    "location": "Cape Town, WC",
+    "province": "Western Cape",
+    "citySlug": "cape-town",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R22,000 - R26,000 / month",
+    "shortDescription": "Build modern responsive web applications and APIs using modern JavaScript, React, and Node.js for high-growth African fintech platforms.",
+    "description": "Plum Systems Africa is recruiting an entry-level Junior Full-Stack Developer to join our Cape Town engineering cohort. You will collaborate closely with senior software engineers, participate in agile sprint ceremonies, write unit tests, and ship client-facing portal features. We look for curiosity, strong foundational JavaScript or TypeScript skills, and a commitment to writing clean, maintainable code.",
+    "eligibility": "South African citizen aged 18-35. Recent diploma, degree, or certified coding bootcamp graduate. Strong portfolio of 2+ completed coding projects.",
+    "qualifications": "National Diploma or BSc in Computer Science, Information Technology, or equivalent accredited bootcamp certificate (e.g., WeThinkCode_, HyperionDev, ALX).",
+    "requiredDocuments": [
+      "Updated CV (max 2 pages)",
+      "Certified copy of South African ID (not older than 3 months)",
+      "Academic transcript or bootcamp certification",
+      "GitHub profile or link to hosted web projects",
+      "Short motivation statement (max 300 words)"
+    ],
+    "applicationSteps": [
+      "Submit application and verified portfolio links via portal",
+      "Complete a 60-minute asynchronous frontend coding exercise",
+      "Technical conversation with a Lead Developer",
+      "Culture fit chat and formal offer"
+    ],
+    "closingDate": "2026-10-15T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-001",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Fintech & Enterprise Software · Woodstock, Cape Town · B-BBEE Level 1 Contributor · 140+ Employees",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Git"
+    ]
+  },
+  {
+    "id": "ubu-002",
+    "title": "UI/UX & Product Design Internship",
+    "organisation": "KasiDigital Studio",
+    "category": "Internships",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R9,500 / month",
+    "shortDescription": "12-month paid product design residency designing digital interfaces, user flows, and wireframes for mobile financial and health apps.",
+    "description": "Join our human-centred design studio in Braamfontein. As a UI/UX intern, you will conduct contextual user research with township entrepreneurs, build wireframes and high-fidelity Figma prototypes, and assist in usability testing sessions. You will be paired with a Senior Product Designer for weekly 1-on-1 mentorship.",
+    "eligibility": "South African youth aged 19-30. Demonstrated passion for digital design, typography, and empathy-driven user problem solving. A link to a design portfolio or Figma case study is required.",
+    "qualifications": "Diploma or Degree in Multimedia, Graphic Design, Information Systems, or self-taught designer with a standout Figma portfolio.",
+    "requiredDocuments": [
+      "Curriculum Vitae",
+      "Certified South African ID copy",
+      "Link to online portfolio (Behance, Dribbble, Figma, or personal website)",
+      "Brief cover letter describing one digital product you love and why"
+    ],
+    "applicationSteps": [
+      "Online portfolio and CV screening",
+      "Take-home design challenge (redesigning a USSD/mobile banking screen)",
+      "Portfolio walkthrough presentation (30 minutes)",
+      "Final selection and onboarding"
+    ],
+    "closingDate": "2026-10-12T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-002",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Creative Technology Studio · Braamfontein, Johannesburg · Youth Empowerment Partner",
+    "situationTags": [
+      "A university student",
+      "A graduate",
+      "Looking for experience",
+      "Unemployed"
+    ],
+    "skillsTags": [
+      "UI/UX",
+      "Figma",
+      "User Research",
+      "Prototyping",
+      "Design Systems"
+    ]
+  },
+  {
+    "id": "ubu-003",
+    "title": "Systems Support & Cloud Learnership (NQF Level 5)",
+    "organisation": "Vakina Telecoms & MICT SETA",
+    "category": "Learnerships",
+    "location": "Durban, KZN",
+    "province": "KwaZulu-Natal",
+    "citySlug": "durban",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "R6,800 / month (SETA Stipend)",
+    "shortDescription": "Accredited 12-month MICT SETA learnership combining classroom cloud certifications (AWS/Azure) with hands-on enterprise IT support.",
+    "description": "A funded 1-year learnership programme leading to a nationally accredited National Certificate in Systems Support (SAQA ID 48573, NQF 5). The first 3 months consist of immersive network configuration, Linux server administration, and cloud fundamentals, followed by 9 months of structured workplace experience in our Umhlanga support centre.",
+    "eligibility": "Unemployed South African citizens aged 18-29. Must have passed Grade 12 (Matric) with Pure Mathematics or Mathematical Literacy (minimum 50%) and English (minimum 50%).",
+    "qualifications": "National Senior Certificate (Grade 12 / Matric). No prior tertiary qualification necessary.",
+    "requiredDocuments": [
+      "Comprehensive CV",
+      "Certified Matric / Senior Certificate",
+      "Certified copy of ID (green barcoded or smart card)",
+      "Proof of residential address in eThekwini / KZN",
+      "Affidavit confirming unemployed status"
+    ],
+    "applicationSteps": [
+      "Verification of Matric results and compliance criteria",
+      "In-person aptitude and numerical test at Durban testing centre",
+      "Panel interview and verification",
+      "Contract signing and SETA registration"
+    ],
+    "closingDate": "2026-10-10T17:00:00Z",
+    "applicationUrl": "https://example.com/apply/ubu-003",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Telecommunications & Infrastructure Provider · Umhlanga Ridge, Durban · MICT SETA Accredited",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "Unemployed",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Cloud",
+      "Networking",
+      "Linux",
+      "Troubleshooting",
+      "Hardware Support"
+    ]
+  },
+  {
+    "id": "ubu-004",
+    "title": "BSc / BEng STEM Future Leaders Bursary 2027",
+    "organisation": "Inzalo Energy & Tech Trust",
+    "category": "Bursaries",
+    "location": "Pretoria, GP",
+    "province": "Gauteng",
+    "citySlug": "pretoria",
+    "experienceLevel": "Student / Matric",
+    "stipendOrSalary": "Full Tuition + R5,200 / month living stipend",
+    "shortDescription": "Comprehensive bursary covering 100% tuition, campus accommodation, laptop allowance, textbooks, and vacation work opportunities.",
+    "description": "The Inzalo Energy Trust invests in high-potential South African youth pursuing degrees in Computer Engineering, Electrical Engineering, Data Science, and Renewable Energy Systems at registered public South African universities. Beyond financial backing, bursars receive dedicated executive mentorship and guaranteed vacation work placements.",
+    "eligibility": "South African citizens currently in Grade 12 or in their 1st/2nd year of undergraduate university study. Combined household income under R600,000 per annum. Minimum 70% academic average.",
+    "qualifications": "Grade 12 with Level 6+ in Mathematics and Physical Science, or current university academic record with 65%+ average.",
+    "requiredDocuments": [
+      "Identity Document of applicant and parents/guardians",
+      "Grade 11 final report and Grade 12 mid-year / prelim results",
+      "Full academic transcript (for university students)",
+      "Proof of household income (payslips or SASSA letters)",
+      "Handwritten motivation letter outlining community contribution"
+    ],
+    "applicationSteps": [
+      "Online portal document submission",
+      "Shortlisting and verification with Department of Home Affairs and SARS",
+      "Psychometric and problem-solving evaluation",
+      "Trustee interview panel in Pretoria or via virtual link"
+    ],
+    "closingDate": "2026-10-31T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-004",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Philanthropic Education Trust · Hatfield, Pretoria · 2,400+ Students Funded to Date",
+    "situationTags": [
+      "A Matric learner",
+      "A university student"
+    ],
+    "skillsTags": [
+      "Data Analytics",
+      "Mathematics",
+      "Engineering",
+      "Research",
+      "Problem Solving"
+    ]
+  },
+  {
+    "id": "ubu-005",
+    "title": "AI & Practical Machine Learning Foundation Course",
+    "organisation": "Ubuntu Tech Academy",
+    "category": "Courses",
+    "location": "Hybrid / Remote",
+    "province": "National / Remote",
+    "citySlug": "cape-town",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "100% Subsidised / Free (Data vouchers provided)",
+    "shortDescription": "16-week interactive evening and weekend bootcamp covering Python programming, machine learning workflows, and generative AI prompt engineering.",
+    "description": "Designed specifically for South African youth seeking practical digital competencies. Features live interactive code sessions, zero-rated data access for major mobile networks (Vodacom, MTN, Telkom), and real-world African dataset projects such as solar grid prediction and agricultural crop yield analysis.",
+    "eligibility": "South African residents aged 18-35. Access to a laptop or desktop computer with internet capability. Basic computer literacy and desire to learn.",
+    "qualifications": "Open entry. No previous programming experience required.",
+    "requiredDocuments": [
+      "Copy of South African ID or asylum/refugee permit",
+      "Confirmation of residential address",
+      "Completion of a short 15-minute logic puzzle quiz"
+    ],
+    "applicationSteps": [
+      "Register profile on Academy learning management system",
+      "Complete introductory logic and curiosity assessment",
+      "Cohort placement and welcome orientation session"
+    ],
+    "closingDate": "2026-10-22T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-005",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Non-Profit Digital Skills Initiative · Cape Town & National · Sponsored by Global Impact Fund",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "A graduate",
+      "Unemployed",
+      "Changing careers",
+      "Starting a business"
+    ],
+    "skillsTags": [
+      "AI",
+      "Python",
+      "Data Analytics",
+      "Machine Learning",
+      "Automation"
+    ]
+  },
+  {
+    "id": "ubu-006",
+    "title": "Mzansi Youth Tech & Innovation Summit 2026",
+    "organisation": "Silicon Jozi & City of Joburg",
+    "category": "Events",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "Free Attendance (Lunch & transport voucher included)",
+    "shortDescription": "Two-day high-energy summit connecting 1,200 young creators, tech founders, recruiters, and bursary administrators with live speed-pitching.",
+    "description": "Meet hiring managers from top South African tech companies, attend interactive portfolio teardowns, practice mock technical interviews, and watch the live finals of the HackMzansi Civic Tech Challenge. Free CV headshots and portfolio review clinics on site.",
+    "eligibility": "Open to all South African youth aged 16-35 interested in tech, digital media, entrepreneurship, and creative economies.",
+    "qualifications": "All educational backgrounds welcome.",
+    "requiredDocuments": [
+      "Online registration ticket QR code",
+      "ID document or student card for badge issuance"
+    ],
+    "applicationSteps": [
+      "Reserve your free digital pass",
+      "Select workshop tracks (Software, Product, Venture, or Creative)",
+      "Receive confirmation email and venue logistics"
+    ],
+    "closingDate": "2026-10-18T12:00:00Z",
+    "applicationUrl": "https://example.com/apply/ubu-006",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Ecosystem Convenor · Newtown Cultural Precinct, Johannesburg",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "A university student",
+      "A graduate",
+      "Unemployed",
+      "Changing careers",
+      "Starting a business"
+    ],
+    "skillsTags": [
+      "Networking",
+      "Entrepreneurship",
+      "Interviewing",
+      "Career Strategy"
+    ]
+  },
+  {
+    "id": "ubu-007",
+    "title": "Cybersecurity Operations Junior Analyst",
+    "organisation": "SentryGuard Southern Africa",
+    "category": "Jobs",
+    "location": "Pretoria, GP",
+    "province": "Gauteng",
+    "citySlug": "pretoria",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R24,000 - R28,500 / month",
+    "shortDescription": "Monitor enterprise security telemetry, triage suspicious alerts, conduct vulnerability scans, and assist with incident response protocols.",
+    "description": "Our 24/7 Security Operations Centre (SOC) in Menlyn is seeking an entry-level analyst. You will examine SIEM logs, analyze phishing indicators, and coordinate incident mitigation. We offer structured training paths towards CompTIA Security+ and Certified Ethical Hacker (CEH) credentials.",
+    "eligibility": "South African citizen with clean criminal record. Ability to work rotating shifts in our secure operations room. Foundational understanding of TCP/IP, DNS, and operating systems.",
+    "qualifications": "BTech / Diploma / Degree in IT, Information Security, Network Engineering, or active CompTIA Security+ / Network+ certification.",
+    "requiredDocuments": [
+      "Up-to-date CV with technical skills list",
+      "Certified ID copy",
+      "Academic transcripts",
+      "Clear police clearance certificate or consent for background check"
+    ],
+    "applicationSteps": [
+      "Application and technical questionnaire review",
+      "Practical log-analysis capture-the-flag simulation",
+      "Security interview panel",
+      "Security clearance and offer"
+    ],
+    "closingDate": "2026-10-16T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-007",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Managed Security Services Provider · Menlyn Maine, Pretoria · ISO 27001 Certified",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Cybersecurity",
+      "Linux",
+      "Networking",
+      "Python",
+      "Incident Response"
+    ]
+  },
+  {
+    "id": "ubu-008",
+    "title": "Data Analytics & Business Intelligence Internship",
+    "organisation": "Cape Analytics Collective",
+    "category": "Internships",
+    "location": "Cape Town, WC",
+    "province": "Western Cape",
+    "citySlug": "cape-town",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R11,000 / month",
+    "shortDescription": "Translate retail and logistics data into actionable dashboards using SQL, Power BI, and Python in a collaborative consulting team.",
+    "description": "Work with FMCG and e-commerce clients across Africa. As a Data Intern, you will clean raw tabular datasets, write SQL queries to pull metrics, build interactive Power BI and Tableau dashboards, and communicate findings to client business managers.",
+    "eligibility": "Youth aged 20-29. Strong analytical mindset and comfort working with numbers and spreadsheets. Demonstrated knowledge of SQL or Python.",
+    "qualifications": "Degree or National Diploma in Statistics, Economics, Information Systems, Mathematics, or Data Science.",
+    "requiredDocuments": [
+      "Professional CV",
+      "Certified ID Copy",
+      "Full academic record showing completed quantitative courses",
+      "Sample project report or GitHub/Kaggle link"
+    ],
+    "applicationSteps": [
+      "Document screening and basic SQL quiz",
+      "Business case data interpretation exercise (48 hours)",
+      "Technical debrief and client team interview"
+    ],
+    "closingDate": "2026-10-14T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-008",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Data Strategy Consultancy · Century City, Cape Town · Youth Development Employer",
+    "situationTags": [
+      "A university student",
+      "A graduate",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Data Analytics",
+      "SQL",
+      "Python",
+      "Power BI",
+      "Excel"
+    ]
+  },
+  {
+    "id": "ubu-009",
+    "title": "Digital Marketing & Content Production Learnership",
+    "organisation": "MediaWorks Hub & Services SETA",
+    "category": "Learnerships",
+    "location": "Gqeberha, EC",
+    "province": "Eastern Cape",
+    "citySlug": "gqeberha",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "R6,500 / month (Services SETA)",
+    "shortDescription": "12-month accredited learnership in digital advertising, social media strategy, short-form video creation, and SEO fundamentals.",
+    "description": "Gain workplace-ready digital communications experience with top hospitality, automotive, and retail brands across Nelson Mandela Bay. You will learn paid social ad creation, search engine optimization, email campaign workflows, and brand storytelling.",
+    "eligibility": "South African citizens aged 18-30 residing in Eastern Cape. Must be currently unemployed. Matric with English 55%+ required.",
+    "qualifications": "Grade 12 / National Senior Certificate.",
+    "requiredDocuments": [
+      "CV with contactable references",
+      "Certified Matric certificate",
+      "Certified ID copy",
+      "Proof of residence in Nelson Mandela Bay",
+      "3-minute video introduction or 1-page writing sample"
+    ],
+    "applicationSteps": [
+      "Online portfolio/submission review",
+      "Writing and creative scenario assessment",
+      "In-person interview in Gqeberha",
+      "Contract onboarding"
+    ],
+    "closingDate": "2026-10-19T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-009",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Creative Agency & SETA Partner · Central, Gqeberha · Eastern Cape Youth Champion",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "Unemployed",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Digital Marketing",
+      "Content Creation",
+      "SEO",
+      "Social Media",
+      "Copywriting"
+    ]
+  },
+  {
+    "id": "ubu-010",
+    "title": "Youth Micro-Enterprise & Startup Incubator Fund",
+    "organisation": "Eastern Cape Youth Venture Fund",
+    "category": "Bursaries",
+    "location": "East London, EC",
+    "province": "Eastern Cape",
+    "citySlug": "east-london",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "R45,000 non-repayable grant + 6-month stipend",
+    "shortDescription": "Seed funding, co-working space, supplier introductions, and hands-on accounting guidance for young entrepreneurs building local businesses.",
+    "description": "Whether you are starting a neighbourhood delivery network, an agro-processing brand, or a tech repair service in the Buffalo City metro, this programme provides seed capital, financial mentorship, and market linkage with established supply chains.",
+    "eligibility": "South African youth aged 18-35 residing in Buffalo City or surrounding Eastern Cape townships. Must have a viable commercial idea or existing small venture running for under 2 years.",
+    "qualifications": "No formal qualification prerequisite. Basic literacy and commitment to business workshops.",
+    "requiredDocuments": [
+      "Certified ID copy",
+      "Simple 2-page business summary or pitch deck",
+      "Cost breakdown of how the grant will be spent",
+      "Proof of address in Eastern Cape",
+      "Bank statement (personal or business, 3 months)"
+    ],
+    "applicationSteps": [
+      "Submission of business concept canvas",
+      "Shortlist pitching day at East London Innovation Hub",
+      "Due diligence and financial compliance setup",
+      "Disbursement and monthly incubation check-ins"
+    ],
+    "closingDate": "2026-10-28T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-010",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Public-Private Enterprise Trust · Quigney, East London · 320 Ventures Launched",
+    "situationTags": [
+      "Starting a business",
+      "Unemployed",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Entrepreneurship",
+      "Financial Management",
+      "Sales",
+      "Leadership",
+      "Operations"
+    ]
+  },
+  {
+    "id": "ubu-011",
+    "title": "Cloud Architecture & DevOps Masterclass",
+    "organisation": "Kalahari Tech Academy",
+    "category": "Courses",
+    "location": "Kimberley, NC",
+    "province": "Northern Cape",
+    "citySlug": "kimberley",
+    "experienceLevel": "1-2 Years",
+    "stipendOrSalary": "Free (Full provincial scholarship)",
+    "shortDescription": "Specialised 10-week technical masterclass on Docker, Kubernetes, CI/CD pipelines, and AWS Terraform infrastructure as code.",
+    "description": "A funded upskilling initiative geared towards bridging regional digital divides in the Northern Cape. Learn how high-availability server infrastructures are deployed, automate testing pipelines, and prepare for industry AWS Solutions Architect Associate exams.",
+    "eligibility": "South African citizens in the Northern Cape with foundational knowledge in Linux, networking, or at least one programming language.",
+    "qualifications": "Diploma/Degree in IT or 1+ year demonstrated experience in junior software development or IT administration.",
+    "requiredDocuments": [
+      "Certified ID copy",
+      "Proof of Northern Cape residency",
+      "CV detailing technical proficiencies",
+      "Passing result on pre-course Docker/Linux quiz"
+    ],
+    "applicationSteps": [
+      "Online technical diagnostic assessment",
+      "Verification of credentials",
+      "Cohort orientation and virtual lab provisioning"
+    ],
+    "closingDate": "2026-10-25T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-011",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Provincial Digital Innovation Initiative · Civic Centre, Kimberley",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Cloud",
+      "DevOps",
+      "Linux",
+      "Docker",
+      "Cybersecurity"
+    ]
+  },
+  {
+    "id": "ubu-012",
+    "title": "Agri-Tech & Drone Mapping Bootcamp",
+    "organisation": "Lowveld Innovation Cluster",
+    "category": "Events",
+    "location": "Mbombela, MP",
+    "province": "Mpumalanga",
+    "citySlug": "mbombela",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "Free Admission (Equipment provided on site)",
+    "shortDescription": "3-day practical hands-on workshop learning commercial drone piloting, multispectral crop imaging, and precision farm analytics.",
+    "description": "Explore the intersection of modern agricultural science and geospatial technology in Mpumalanga. Participants will handle commercial flight simulators, learn flight planning safety regulations, and analyze NDVI sensor data that farmers use to protect crop yields.",
+    "eligibility": "South African youth aged 18-32 based in Mpumalanga. Interest in agriculture, geography, robotics, or environmental sustainability.",
+    "qualifications": "Matric certificate.",
+    "requiredDocuments": [
+      "Certified ID copy",
+      "Proof of residence in Ehlanzeni / Mpumalanga",
+      "Short motivation for attending"
+    ],
+    "applicationSteps": [
+      "Online seat registration",
+      "Selection based on regional representation",
+      "Notification and workshop schedule release"
+    ],
+    "closingDate": "2026-10-17T17:00:00Z",
+    "applicationUrl": "https://example.com/apply/ubu-012",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "AgriTech Accelerator · Riverside Park, Mbombela · Partnered with SACAA certified pilots",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "Starting a business",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Data Analytics",
+      "Robotics",
+      "Agriculture",
+      "Geospatial",
+      "Problem Solving"
+    ]
+  },
+  {
+    "id": "ubu-013",
+    "title": "Renewable Energy & Solar PV Installation Learnership",
+    "organisation": "SolPower Limpopo & EWSETA",
+    "category": "Learnerships",
+    "location": "Polokwane, LP",
+    "province": "Limpopo",
+    "citySlug": "polokwane",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "R6,200 / month (EWSETA)",
+    "shortDescription": "12-month technical training programme covering solar photovoltaic rooftop installations, inverters, battery storage, and electrical compliance.",
+    "description": "Gain practical green-economy skills in Polokwane. The learnership qualifies successful learners to sit for the GreenCard PV installer assessment, opening high-demand job pathways in solar maintenance, commercial microgrids, and rural electrification projects.",
+    "eligibility": "Unemployed youth aged 18-29. Physically fit and comfortable working at heights with safety harnesses. Matric with Mathematics / Maths Lit and Science.",
+    "qualifications": "Matric / Grade 12 or TVET N2 / N3 in Electrical Engineering.",
+    "requiredDocuments": [
+      "Certified ID document",
+      "Certified Matric or TVET N-level certificate",
+      "Medical fitness declaration (provided on portal)",
+      "Proof of address in Limpopo"
+    ],
+    "applicationSteps": [
+      "Application verification",
+      "Physical and safety aptitude assessment",
+      "Interview with Master Electrician team",
+      "Medical fitness check and induction"
+    ],
+    "closingDate": "2026-10-13T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-013",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Renewable Power Solutions · Ladanna Industrial, Polokwane · EWSETA Accredited",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "Unemployed",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Engineering",
+      "Clean Energy",
+      "Electrical",
+      "Hardware Support",
+      "Safety Protocols"
+    ]
+  },
+  {
+    "id": "ubu-014",
+    "title": "Junior Business Analyst & Systems Modeller",
+    "organisation": "Highveld Financial Services",
+    "category": "Jobs",
+    "location": "Bloemfontein, FS",
+    "province": "Free State",
+    "citySlug": "bloemfontein",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R20,000 - R23,500 / month",
+    "shortDescription": "Bridge business operational needs and software engineering through user stories, UML workflow diagrams, and data requirement specs.",
+    "description": "Join our operations centre in Bloemfontein. As a Junior Business Analyst, you will shadow Senior Consultants to gather requirements from branch managers, model BPMN process diagrams, test system enhancements, and prepare release documentation.",
+    "eligibility": "South African citizen with exceptional written communication and logical deconstruction skills.",
+    "qualifications": "BCom / Diploma in Information Systems, Business Management, Industrial Engineering, or Computer Science.",
+    "requiredDocuments": [
+      "Curriculum Vitae",
+      "Certified ID Copy",
+      "Official academic transcript",
+      "Cover letter detailing analytical problem-solving experience"
+    ],
+    "applicationSteps": [
+      "Resume and academic screening",
+      "Case study assessment (process breakdown and writing user stories)",
+      "Panel interview with Practice Lead",
+      "Offer and background verification"
+    ],
+    "closingDate": "2026-10-21T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-014",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Financial Services Group · Westdene, Bloemfontein · Established 2008",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Business Analysis",
+      "Problem Solving",
+      "SQL",
+      "Documentation",
+      "Agile"
+    ]
+  },
+  {
+    "id": "ubu-015",
+    "title": "Mobile App Developer Internship (Flutter & React Native)",
+    "organisation": "Durban DevLabs",
+    "category": "Internships",
+    "location": "Durban, KZN",
+    "province": "KwaZulu-Natal",
+    "citySlug": "durban",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R10,500 / month",
+    "shortDescription": "Craft cross-platform Android and iOS applications serving millions of users across public transit, community safety, and micro-commerce.",
+    "description": "Durban DevLabs builds human-scale technology. During this 12-month paid internship, you will develop mobile UI screens, integrate RESTful APIs, manage offline local caching with SQLite, and prepare APK builds for the Google Play Store.",
+    "eligibility": "South African youth aged 18-30. Basic understanding of JavaScript, Dart, or Java/Kotlin. Demonstrated passion for mobile products.",
+    "qualifications": "Diploma/Degree in IT/Software Development, or portfolio showcasing at least one functioning mobile or responsive web app.",
+    "requiredDocuments": [
+      "CV with GitHub/GitLab URL",
+      "Certified ID document",
+      "Link to a functioning APK, web demo, or GitHub repository",
+      "Short motivation letter"
+    ],
+    "applicationSteps": [
+      "Review of submitted code repos",
+      "Mini mobile bug-fix challenge",
+      "Culture and technical chat",
+      "Final offer"
+    ],
+    "closingDate": "2026-10-14T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-015",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Mobile Software Studio · Morningside, Durban · 35+ Developers",
+    "situationTags": [
+      "A graduate",
+      "A university student",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "JavaScript",
+      "Mobile Dev",
+      "Flutter",
+      "React Native",
+      "Git"
+    ]
+  },
+  {
+    "id": "ubu-016",
+    "title": "National TVET Engineering & Artisan Bursary 2027",
+    "organisation": "ManufactureSA Development Fund",
+    "category": "Bursaries",
+    "location": "Pretoria, GP",
+    "province": "Gauteng",
+    "citySlug": "pretoria",
+    "experienceLevel": "Student / Matric",
+    "stipendOrSalary": "100% Tuition, Tools Kit & R3,800 monthly stipend",
+    "shortDescription": "Financial sponsorship for students enrolled in N1-N6 engineering trades (Electrical, Fitting & Turning, Millwright, Mechatronics) at public TVET colleges.",
+    "description": "Addressing South Africa's critical artisan deficit. Bursary beneficiaries receive complete college tuition, official trade safety gear and tools, trade test preparation support, and guaranteed 18-month workplace logbook placement.",
+    "eligibility": "South African citizens studying or admitted to a registered public TVET college in South Africa for Engineering Studies. Combined family income under R350,000 p.a.",
+    "qualifications": "Passed Grade 9-12 with Mathematics or Maths Lit and Physical Science / Technical Science.",
+    "requiredDocuments": [
+      "Certified copy of applicant ID",
+      "Certified copy of parent/guardian ID",
+      "Proof of TVET College registration or provisional acceptance letter",
+      "Proof of household income (3 months payslips, SASSA proof, or affidavit)",
+      "Latest academic results"
+    ],
+    "applicationSteps": [
+      "Portal application form completion",
+      "Financial means test assessment",
+      "TVET college confirmation",
+      "Contract award notification"
+    ],
+    "closingDate": "2026-11-04T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-016",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "National Manufacturing Industry Fund · Rosslyn, Pretoria · 8,000+ Apprentices Funded",
+    "situationTags": [
+      "A TVET student",
+      "A Matric learner"
+    ],
+    "skillsTags": [
+      "Engineering",
+      "Hardware Support",
+      "Manufacturing",
+      "Problem Solving"
+    ]
+  },
+  {
+    "id": "ubu-017",
+    "title": "Junior Data Engineer & Pipeline Associate",
+    "organisation": "Ubuntu Cloud Intelligence",
+    "category": "Jobs",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R25,000 - R30,000 / month",
+    "shortDescription": "Design automated ETL pipelines, maintain data lake storage in AWS/GCP, and optimize SQL queries for real-time mobile app telemetry.",
+    "description": "Join our data platform team in Rosebank. You will assist senior architects in writing Python data pipelines, configuring dbt transformations, optimizing Postgres queries, and maintaining data quality monitoring alerts.",
+    "eligibility": "South African citizen with strong algorithmic intuition, solid SQL knowledge, and proficiency in Python or Java/Scala.",
+    "qualifications": "BSc / BEng / Diploma in Computer Science, Data Engineering, Software Development, or proven self-taught portfolio.",
+    "requiredDocuments": [
+      "CV with GitHub repository link",
+      "Certified ID copy",
+      "Degree/Diploma transcript",
+      "Brief description of one data pipeline or database schema you created"
+    ],
+    "applicationSteps": [
+      "Resume and repository evaluation",
+      "SQL and Python algorithmic challenge",
+      "System architecture discussion",
+      "Background check and offer"
+    ],
+    "closingDate": "2026-10-16T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-017",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Enterprise Cloud Architecture · Rosebank, Johannesburg · 200+ Tech Team",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Python",
+      "SQL",
+      "Cloud",
+      "Data Analytics",
+      "DevOps"
+    ]
+  },
+  {
+    "id": "ubu-018",
+    "title": "Creative Technologist & Interactive 3D Workshop",
+    "organisation": "Vortex Digital Arts Collective",
+    "category": "Events",
+    "location": "Cape Town, WC",
+    "province": "Western Cape",
+    "citySlug": "cape-town",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "Free (Includes coffee, lunch & software access)",
+    "shortDescription": "Full-day interactive lab exploring generative SVG, Three.js shaders, augmented reality, and creative coding for music and fashion festivals.",
+    "description": "Held at the Zeitz MOCAA creative studios in the Silo District. Learn how to transform mathematical algorithms into interactive canvas visuals, build WebGL micro-experiences, and connect with creative directors looking for fresh young talent.",
+    "eligibility": "South African creatives, coders, animators, and digital artists aged 18-35.",
+    "qualifications": "Curiosity and eagerness to experiment with visual media.",
+    "requiredDocuments": [
+      "RSVP registration confirmation",
+      "Bring your own laptop if possible (loaner devices available on prior request)"
+    ],
+    "applicationSteps": [
+      "Register via online guestlist",
+      "Receive preparation pack with free asset downloads",
+      "Attend in-person session in Cape Town"
+    ],
+    "closingDate": "2026-10-24T12:00:00Z",
+    "applicationUrl": "https://example.com/apply/ubu-018",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Creative Technology Non-Profit · V&A Waterfront, Cape Town",
+    "situationTags": [
+      "A university student",
+      "A graduate",
+      "Looking for experience",
+      "Changing careers"
+    ],
+    "skillsTags": [
+      "UI/UX",
+      "JavaScript",
+      "Creativity",
+      "Web Design"
+    ]
+  },
+  {
+    "id": "ubu-019",
+    "title": "Quality Assurance & Automated Testing Learnership",
+    "organisation": "TechTest Africa & ISETT",
+    "category": "Learnerships",
+    "location": "Pretoria, GP",
+    "province": "Gauteng",
+    "citySlug": "pretoria",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "R7,200 / month (SETA Stipend)",
+    "shortDescription": "12-month learnership covering software test automation (Selenium, Cypress), API testing with Postman, and defect tracking in Jira.",
+    "description": "Quality assurance is one of the highest-demand entry points into the software engineering profession. This programme teaches you how to write automated test scripts, document edge cases, collaborate with developers, and complete ISTQB foundation certification.",
+    "eligibility": "Unemployed youth aged 18-29. Detail-oriented mind, strong logical reasoning, and passion for technology.",
+    "qualifications": "Grade 12 (Matric) with 50%+ in Mathematics/Maths Literacy and English.",
+    "requiredDocuments": [
+      "Updated CV",
+      "Certified Matric certificate",
+      "Certified South African ID copy",
+      "Proof of Gauteng address",
+      "Affidavit of unemployment"
+    ],
+    "applicationSteps": [
+      "Document eligibility verification",
+      "Logical reasoning and bug-hunting exercise",
+      "Competency interview in Pretoria",
+      "Induction and SETA agreement signing"
+    ],
+    "closingDate": "2026-10-18T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-019",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Software Quality Engineering · Persequor Park, Pretoria",
+    "situationTags": [
+      "A Matric learner",
+      "A TVET student",
+      "Unemployed",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "QA Testing",
+      "JavaScript",
+      "Python",
+      "Problem Solving",
+      "Documentation"
+    ]
+  },
+  {
+    "id": "ubu-020",
+    "title": "Township Fintech & Community Banking Residency",
+    "organisation": "Khula Vula Community Trust",
+    "category": "Courses",
+    "location": "Durban, KZN",
+    "province": "KwaZulu-Natal",
+    "citySlug": "durban",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "Full Fellowship + R3,500 monthly travel stipend",
+    "shortDescription": "6-month practical innovation residency designing accessible savings, stokvel digital ledgers, and spaza shop point-of-sale solutions.",
+    "description": "Immerse yourself in community finance. Work directly with informal business owners, stokvel treasurers, and taxi associations across Umlazi and KwaMashu to prototype mobile payment tools tailored to South Africa's real cash-and-digital economy.",
+    "eligibility": "South African youth aged 19-32 residing in KwaZulu-Natal. Interest in micro-finance, economics, software, or township economic development.",
+    "qualifications": "Open to all disciplines.",
+    "requiredDocuments": [
+      "Certified ID copy",
+      "Short motivation on how you would modernise a local stokvel or spaza shop",
+      "Proof of residence in KZN"
+    ],
+    "applicationSteps": [
+      "Written concept evaluation",
+      "Field challenge day in Durban",
+      "Fellowship cohort selection"
+    ],
+    "closingDate": "2026-10-26T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-020",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Community Financial Innovation Hub · Durban Central, KZN",
+    "situationTags": [
+      "Starting a business",
+      "Unemployed",
+      "A graduate",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Entrepreneurship",
+      "UI/UX",
+      "Financial Management",
+      "User Research"
+    ]
+  },
+  {
+    "id": "ubu-021",
+    "title": "Junior Cloud Support Associate",
+    "organisation": "Atlas Cloud Hosting SA",
+    "category": "Jobs",
+    "location": "Cape Town, WC",
+    "province": "Western Cape",
+    "citySlug": "cape-town",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R19,500 - R22,000 / month",
+    "shortDescription": "Help enterprise customers diagnose web server errors, DNS configurations, SSL certificates, and cloud instance backups.",
+    "description": "Atlas Cloud operates carrier-grade data centres in Cape Town and Johannesburg. As a Junior Support Associate, you will answer customer support tickets via live chat and ticket desk, write troubleshooting KB articles, and monitor server uptime alerts.",
+    "eligibility": "South African citizen with exceptional written customer service patience and practical understanding of web protocols (HTTP, SSH, DNS).",
+    "qualifications": "Diploma or Certificate in IT, Networking, Web Development, or equivalent practical experience.",
+    "requiredDocuments": [
+      "CV with relevant experience or homelab projects",
+      "Certified ID copy",
+      "Educational certificates"
+    ],
+    "applicationSteps": [
+      "Initial screening call",
+      "Troubleshooting ticket simulation (written response)",
+      "Technical interview with Support Director",
+      "Final offer"
+    ],
+    "closingDate": "2026-10-17T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-021",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Managed Cloud Infrastructure · Foreshore, Cape Town · 90+ Staff",
+    "situationTags": [
+      "A graduate",
+      "A TVET student",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Cloud",
+      "Linux",
+      "Networking",
+      "Troubleshooting",
+      "Customer Service"
+    ]
+  },
+  {
+    "id": "ubu-022",
+    "title": "Digital Transformation & Civic Tech Internship",
+    "organisation": "GovForward Digital Labs",
+    "category": "Internships",
+    "location": "Pretoria, GP",
+    "province": "Gauteng",
+    "citySlug": "pretoria",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R12,000 / month",
+    "shortDescription": "Collaborate with public service innovators to redesign citizen-facing digital services, clinic appointment systems, and municipal portals.",
+    "description": "Help make public services work for ordinary South Africans. You will map user journeys, write plain-language microcopy in multiple South African languages, conduct accessibility audits, and test interfaces on low-spec Android smartphones.",
+    "eligibility": "South African youth aged 20-30 with an interest in public sector impact, human rights, civic technology, and digital inclusion.",
+    "qualifications": "Diploma or Degree in Public Governance, Information Design, Communications, Social Sciences, or Software.",
+    "requiredDocuments": [
+      "CV",
+      "Certified ID Copy",
+      "Academic transcript",
+      "1-page essay: 'How can municipal services in South Africa be simplified for smartphone users?'"
+    ],
+    "applicationSteps": [
+      "Essay and credential review",
+      "Civic problem-solving workshop interview",
+      "Placement confirmation"
+    ],
+    "closingDate": "2026-10-23T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-022",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Civic Innovation Lab · Arcadia, Pretoria · Non-partisan Public Innovation",
+    "situationTags": [
+      "A graduate",
+      "A university student",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "UI/UX",
+      "Content Creation",
+      "User Research",
+      "Accessibility",
+      "Public Policy"
+    ]
+  },
+  {
+    "id": "ubu-023",
+    "title": "Postgraduate Data Science & AI Equity Fellowship",
+    "organisation": "DeepMind Africa Research Foundation",
+    "category": "Bursaries",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "Graduate",
+    "stipendOrSalary": "R180,000 annual research grant + conference travel",
+    "shortDescription": "Prestigious full funding for Honours or Masters students conducting research in Natural Language Processing for indigenous African languages.",
+    "description": "Funding research in Machine Translation, Speech Recognition, and Speech-to-Text for isiZulu, isiXhosa, Sesotho, Sepedi, Setswana, and Afrikaans. Fellowships include GPU computing compute credits, international academic advisor pairing, and publication stipends.",
+    "eligibility": "South African citizens accepted or enrolled in an Honours or Masters degree in Computer Science, Data Science, or Computational Linguistics at a South African university.",
+    "qualifications": "BSc / BA Honours in Computer Science, Mathematics, Linguistics, or related disciplines with 68%+ average.",
+    "requiredDocuments": [
+      "Comprehensive academic CV",
+      "Full certified university transcripts",
+      "Research proposal summary (2-3 pages)",
+      "Two academic recommendation letters",
+      "Certified ID copy"
+    ],
+    "applicationSteps": [
+      "Peer review of research proposals",
+      "Interview with academic steering committee",
+      "Grant disbursement and research milestone agreement"
+    ],
+    "closingDate": "2026-11-10T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-023",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "AI Research Institute · Braamfontein, Johannesburg · Partnered with Wits and UCT",
+    "situationTags": [
+      "A graduate",
+      "A university student"
+    ],
+    "skillsTags": [
+      "AI",
+      "Python",
+      "Data Analytics",
+      "NLP",
+      "Research"
+    ]
+  },
+  {
+    "id": "ubu-024",
+    "title": "Practical Web Design & Freelancer Accelerator",
+    "organisation": "Khayelitsha Creative Works",
+    "category": "Courses",
+    "location": "Cape Town, WC",
+    "province": "Western Cape",
+    "citySlug": "cape-town",
+    "experienceLevel": "No Experience Required",
+    "stipendOrSalary": "Free + Co-working desk & high-speed Wi-Fi access",
+    "shortDescription": "12-week immersive programme on building client websites with HTML, CSS, modern CMS platforms, invoicing, and client contract negotiation.",
+    "description": "Turn your digital skills into independent client revenue. You will build 3 real websites for local community enterprises, learn how to register a business, set up PayFast or Yoco payment links, and build a portfolio that wins paying freelance clients.",
+    "eligibility": "Youth aged 18-35 residing in Cape Flats or greater Cape Town metropolitan area. Reliable access to the Khayelitsha Hub 3 days per week.",
+    "qualifications": "Basic computer literacy and demonstrable entrepreneurial spirit.",
+    "requiredDocuments": [
+      "Certified South African ID copy",
+      "Proof of address in Cape Town",
+      "Short explanation of why you want to start a freelance business"
+    ],
+    "applicationSteps": [
+      "Application review",
+      "In-person orientation and diagnostic conversation",
+      "Cohort onboarding"
+    ],
+    "closingDate": "2026-10-20T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-024",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Community Creative Space · Lookout Hill, Khayelitsha · 450+ Graduates",
+    "situationTags": [
+      "Starting a business",
+      "Unemployed",
+      "A Matric learner",
+      "A TVET student",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Web Design",
+      "JavaScript",
+      "Entrepreneurship",
+      "UI/UX",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "ubu-025",
+    "title": "Junior Python Automation Specialist",
+    "organisation": "Apex Financial Automation",
+    "category": "Jobs",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R23,000 - R27,000 / month",
+    "shortDescription": "Write Python bots, data scrapers, and automated reconciliation scripts to streamline regulatory banking reports and customer records.",
+    "description": "Looking for a problem solver who loves scripting and automation. You will work with pandas, requests, openpyxl, and cloud functions to replace manual administrative spreadsheets with reliable, automated scripts.",
+    "eligibility": "South African citizen with strong Python fundamentals, familiarity with Git, and an eye for data accuracy.",
+    "qualifications": "Diploma or Degree in IT, Computer Science, or self-taught with GitHub portfolio demonstrating automation scripts.",
+    "requiredDocuments": [
+      "CV with GitHub link",
+      "Certified ID copy",
+      "Academic transcript / certificate"
+    ],
+    "applicationSteps": [
+      "Code review of sample script",
+      "Live 45-minute script debugging interview",
+      "Final interview with Automation Lead"
+    ],
+    "closingDate": "2026-10-17T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-025",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Fintech Process Automation · Sandton, Johannesburg",
+    "situationTags": [
+      "A graduate",
+      "Changing careers",
+      "Looking for experience"
+    ],
+    "skillsTags": [
+      "Python",
+      "Automation",
+      "SQL",
+      "Git",
+      "Problem Solving"
+    ]
+  },
+  {
+    "id": "ubu-026",
+    "title": "Social Media & Community Growth Internship",
+    "organisation": "Soweto Creative Hub",
+    "category": "Internships",
+    "location": "Johannesburg, GP",
+    "province": "Gauteng",
+    "citySlug": "johannesburg",
+    "experienceLevel": "Entry Level",
+    "stipendOrSalary": "R8,800 / month",
+    "shortDescription": "Manage youth community channels, edit TikTok/Reels video content, coordinate campus ambassadors, and track engagement analytics.",
+    "description": "Be the voice of South Africa's fastest-growing youth cultural brand. You will brainstorm weekly campaign ideas, film creator spotlights in Soweto and Maboneng, interact with online followers, and track campaign engagement metrics in weekly team scrums.",
+    "eligibility": "South African youth aged 18-28. High energy, strong smartphone video editing skills (CapCut, Premiere, Canva), and natural storytelling ability.",
+    "qualifications": "Diploma/Degree in Media Studies, Marketing, or self-proven social media creator with active portfolio.",
+    "requiredDocuments": [
+      "CV",
+      "Certified ID copy",
+      "Links to 2 social media videos or accounts you planned/edited",
+      "Short cover letter"
+    ],
+    "applicationSteps": [
+      "Review of social video samples",
+      "Creative pitch assignment (create a 30-sec reel concept)",
+      "Team vibe interview in Soweto"
+    ],
+    "closingDate": "2026-10-15T23:59:59Z",
+    "applicationUrl": "https://example.com/apply/ubu-026",
+    "isDemo": true,
+    "lastUpdated": "06 October 2026",
+    "organisationDetails": "Youth Media Network · Vilakazi Street, Soweto",
+    "situationTags": [
+      "A Matric learner",
+      "A university student",
+      "A graduate",
+      "Looking for experience",
+      "Unemployed"
+    ],
+    "skillsTags": [
+      "Digital Marketing",
+      "Content Creation",
+      "Social Media",
+      "Copywriting",
+      "Creativity"
+    ]
+  }
+]

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover &amp; Possibility Map — ORBIT</title>
+  <meta name="description" content="Map your personal possibilities. Start from where you are today and generate branching career pathways across tech, creative, business and systems." />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Safety Banner -->
+  <aside class="global-safety-banner" aria-label="Official Scam Awareness Advisory">
+    <div class="site-container safety-banner-inner">
+      <span class="safety-pill-text">⚠️ SCAM ALERT:</span>
+      <span>Never pay application or interview fees · Legitimate South African employers &amp; SETAs never charge candidates.</span>
+    </div>
+  </aside>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ MAP</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link active">Discover</a>
+        <a href="opportunities.html" class="nav-link">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link">Saved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover &amp; Map</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Header -->
+    <section class="section-tight" style="border-bottom: 1px solid var(--border-subtle);">
+      <div class="site-container">
+        <span class="section-kicker">PERSONAL POSSIBILITY MAPPER</span>
+        <h1 class="text-display" style="font-size: clamp(2rem, 4vw, 3.2rem);">
+          START WHERE YOU ARE — THEN SEE WHERE YOU COULD GO.
+        </h1>
+        <p class="text-lead" style="max-width: 760px; margin-top: 12px;">
+          ORBIT doesn't ask what job you want. We ask about your present situation, what you enjoy, and what you have on hand. Your current situation does not determine your final destination.
+        </p>
+
+        <!-- "I Have No Idea" Mode Link (Dedicated Page) -->
+        <div style="margin-top: 24px;" id="no-idea">
+          <a href="no-idea.html" class="btn btn-outline-amber">
+            <span>🧭 I HAVE NO IDEA WHAT I WANT TO DO (NO JUDGEMENT FLOW) →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- "Start Where You Are" Onboarding Steps Section -->
+    <section class="section" id="onboarding-section">
+      <div class="site-container">
+        <div id="onboarding-steps-container" class="search-engine-box">
+          <!-- Step 1: Current Situation -->
+          <div id="onboarding-step-1" class="onboarding-step-pane">
+            <span class="section-kicker">STEP 01 OF 04 · CURRENT REALITY</span>
+            <h2 class="text-h2" style="font-size: 1.85rem; margin-bottom: 8px;">Which best describes your situation right now?</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">Select one to anchor your starting point:</p>
+
+            <div class="discovery-tiles-grid" style="grid-template-columns: repeat(3, 1fr);">
+              <button class="situation-btn" data-situation-choice="studying" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">🎓</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I'm studying</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Currently enrolled at high school, TVET, or university.</span>
+              </button>
+
+              <button class="situation-btn" data-situation-choice="matric" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">🎒</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I've just finished school</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Passed Matric / Grade 12 and looking for a way forward.</span>
+              </button>
+
+              <button class="situation-btn" data-situation-choice="graduate" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">🧑🏾‍💻</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I'm a graduate</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Completed a diploma or degree, seeking entry into industry.</span>
+              </button>
+
+              <button class="situation-btn" data-situation-choice="experience" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">💼</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I have some experience</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Have done casual or informal work, wanting a career leap.</span>
+              </button>
+
+              <button class="situation-btn" data-situation-choice="unsure" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">🧭</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I'm completely unsure</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Looking for open guidance without pressure or pre-set expectations.</span>
+              </button>
+
+              <button class="situation-btn" data-situation-choice="new_direction" style="padding: 24px; text-align: left; display: flex; flex-direction: column; gap: 8px;">
+                <span style="font-size: 28px;">🔄</span>
+                <strong style="font-size: 16px; color: var(--text-primary);">I'm looking for a new direction</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">Pivoting towards digital, tech, or modern green skills.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: What do you enjoy? -->
+          <div id="onboarding-step-2" class="onboarding-step-pane" style="display: none;">
+            <span class="section-kicker">STEP 02 OF 04 · NATURAL INTERESTS</span>
+            <h2 class="text-h2" style="font-size: 1.85rem; margin-bottom: 8px;">What activities give you genuine energy?</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">Select everything that sparks your curiosity:</p>
+
+            <div class="segmented-pills-bar" style="flex-wrap: wrap; gap: 10px; margin-bottom: 32px;">
+              <button class="segmented-pill-btn" data-interest-choice="Solving puzzles">🧩 Solving puzzles &amp; logic</button>
+              <button class="segmented-pill-btn" data-interest-choice="Building with code">💻 Building with code</button>
+              <button class="segmented-pill-btn" data-interest-choice="Designing visual stuff">🎨 Designing visual stuff &amp; layouts</button>
+              <button class="segmented-pill-btn" data-interest-choice="Helping people">🤝 Helping people &amp; community</button>
+              <button class="segmented-pill-btn" data-interest-choice="Numbers & finance">📊 Numbers &amp; spreadsheets</button>
+              <button class="segmented-pill-btn" data-interest-choice="Organizing events">📅 Organizing events &amp; logistics</button>
+              <button class="segmented-pill-btn" data-interest-choice="Writing & storytelling">✍️ Writing &amp; storytelling</button>
+              <button class="segmented-pill-btn" data-interest-choice="Fixing physical things">🔧 Fixing hardware &amp; equipment</button>
+              <button class="segmented-pill-btn" data-interest-choice="Green & climate">🌱 Solar &amp; green economy</button>
+              <button class="segmented-pill-btn" data-interest-choice="Starting projects">🚀 Starting small businesses</button>
+            </div>
+
+            <button id="step-2-next-btn" class="btn btn-primary">
+              <span>CONTINUE TO ASSETS</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <!-- Step 3: What do you have right now? -->
+          <div id="onboarding-step-3" class="onboarding-step-pane" style="display: none;">
+            <span class="section-kicker">STEP 03 OF 04 · INVENTORY</span>
+            <h2 class="text-h2" style="font-size: 1.85rem; margin-bottom: 8px;">What resources or tools do you currently have?</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">Be completely honest — there are viable paths from every combination:</p>
+
+            <div class="segmented-pills-bar" style="flex-wrap: wrap; gap: 10px; margin-bottom: 32px;">
+              <button class="segmented-pill-btn" data-asset-choice="Matric certificate">📜 Matric / Senior certificate</button>
+              <button class="segmented-pill-btn" data-asset-choice="Laptop / PC">💻 Personal Laptop or PC</button>
+              <button class="segmented-pill-btn" data-asset-choice="Smartphone with data">📱 Smartphone with internet</button>
+              <button class="segmented-pill-btn" data-asset-choice="Degree / Diploma">🎓 Tertiary Degree or Diploma</button>
+              <button class="segmented-pill-btn" data-asset-choice="TVET certificate">🏛️ TVET College N-level certificate</button>
+              <button class="segmented-pill-btn" data-asset-choice="Basic code skills">⌨️ Basic programming knowledge</button>
+              <button class="segmented-pill-btn" data-asset-choice="Portfolio draft">📁 Initial portfolio / sample work</button>
+              <button class="segmented-pill-btn" data-asset-choice="Community volunteer exp">❤️ Community / church volunteer work</button>
+              <button class="segmented-pill-btn" data-asset-choice="Driver's licence">🚗 Valid Driver's licence</button>
+              <button class="segmented-pill-btn" data-asset-choice="Open curiosity">✨ High curiosity &amp; determination</button>
+            </div>
+
+            <button id="step-3-next-btn" class="btn btn-primary">
+              <span>CONTINUE TO DESIRED HORIZON</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <!-- Step 4: What do you want most? -->
+          <div id="onboarding-step-4" class="onboarding-step-pane" style="display: none;">
+            <span class="section-kicker">STEP 04 OF 04 · DESIRED HORIZON</span>
+            <h2 class="text-h2" style="font-size: 1.85rem; margin-bottom: 8px;">What is your top priority right now?</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 24px;">Choose the outcome that matters most in your life:</p>
+
+            <div class="segmented-pills-bar" style="flex-wrap: wrap; gap: 10px; margin-bottom: 32px;">
+              <button class="segmented-pill-btn" data-goal-choice="First paid role">💼 First paid entry-level role</button>
+              <button class="segmented-pill-btn" data-goal-choice="Remote tech work">🌐 Remote junior tech employment</button>
+              <button class="segmented-pill-btn" data-goal-choice="Accredited bursary">🎓 Accredited bursary for higher study</button>
+              <button class="segmented-pill-btn" data-goal-choice="Practical learnership">🛠️ SETA-funded practical learnership</button>
+              <button class="segmented-pill-btn" data-goal-choice="Freelance business">🚀 Launching an independent venture</button>
+              <button class="segmented-pill-btn" data-goal-choice="Upskilling course">📚 Subsidized intensive upskilling</button>
+              <button class="segmented-pill-btn" data-goal-choice="Mentorship & network">🤝 Senior mentorship &amp; professional network</button>
+            </div>
+
+            <button id="generate-map-btn" class="btn btn-primary btn-lg">
+              <span>GENERATE MY POSSIBILITY MAP</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Possibility Results Section (The Hero Possibility Map + DNA + Futures) -->
+    <section id="possibility-results-section" class="section" style="display: none;">
+      <div class="site-container">
+        <!-- Regeneration Bar -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-kicker">INTERACTIVE ROUTE</span>
+            <h2 class="text-h2">Your Visual Possibility Map</h2>
+          </div>
+          <button id="regenerate-future-btn" class="btn btn-outline-amber">
+            <span>SHOW ME ANOTHER FUTURE</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <!-- Interactive Starting Point Switcher Bar -->
+        <div style="margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+            <span class="text-mono" style="font-size: 12px; color: var(--color-mint); font-weight: 700; letter-spacing: 0.05em;">
+              📍 SWITCH STARTING POINT (LIVE RECALCULATION):
+            </span>
+            <span class="text-mono" style="font-size: 11px; color: var(--color-cyber-cyan);">
+              CLICK ANY NODE TO INSPECT &amp; MOVE ACTIVE LOCATION
+            </span>
+          </div>
+          <div class="map-starting-point-bar" id="map-starting-point-bar">
+            <button class="map-origin-pill" data-switch-situation="graduate">🧑🏾‍💻 Tertiary Graduate</button>
+            <button class="map-origin-pill" data-switch-situation="school_leaver">🎒 Matric Leaver</button>
+            <button class="map-origin-pill" data-switch-situation="studying">🎓 Current Student (TVET/Uni)</button>
+            <button class="map-origin-pill" data-switch-situation="experienced">💼 Early Professional</button>
+            <button class="map-origin-pill" data-switch-situation="career_change">🔄 Career Changer</button>
+            <button class="map-origin-pill" data-switch-situation="unsure">🧭 Open Explorer</button>
+          </div>
+        </div>
+
+        <!-- The SVG Branching Map Canvas -->
+        <div class="map-canvas-container" id="possibility-map-container">
+          <!-- Dynamically generated branching SVG injected here -->
+        </div>
+
+        <!-- Live Map Status & Stage Navigator -->
+        <div class="map-live-status-card" id="map-live-status-card">
+          <div class="map-live-status-details">
+            <div class="map-live-pulse-dot"></div>
+            <div>
+              <span id="map-status-stage-label" class="current-stage-chip" style="margin-bottom: 4px;">STAGE 0 · YOU ARE HERE</span>
+              <strong id="map-status-title" style="display: block; font-size: 16px; color: var(--text-primary);">
+                Starting Coordinates: Tertiary Graduate
+              </strong>
+              <p id="map-status-desc" style="font-size: 13px; color: var(--text-secondary); margin-top: 4px; max-width: 640px;">
+                You hold foundational qualifications. Your next strategic move is closing the practical portfolio gap before entering high-demand workplace residencies.
+              </p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; align-items: center;">
+            <a id="map-status-action-btn" href="opportunities.html" class="btn btn-primary btn-sm">
+              <span>Explore Opportunities for This Stage →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2-Column: Possibility DNA & Futures -->
+        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; margin-top: 48px;">
+          <!-- Left: My Possibility DNA -->
+          <div id="possibility-dna-container"></div>
+
+          <!-- Right: Meet Your Possible Futures (3 Cards) -->
+          <div>
+            <span class="section-kicker">MULTIPLE IDENTITIES</span>
+            <h3 class="text-h3" style="margin-bottom: 20px;">Meet Your Possible Futures</h3>
+            <div id="possible-futures-grid" class="future-identities-grid" style="grid-template-columns: 1fr; gap: 16px;"></div>
+          </div>
+        </div>
+
+        <!-- Matching Real Opportunities From The Database -->
+        <div style="margin-top: 64px;">
+          <div class="section-header">
+            <span class="section-kicker">ACTIVE REAL-WORLD DOORS</span>
+            <h2 class="text-h2">Opportunities Connected To This Route</h2>
+            <p class="text-lead">Vetted live South African listings that match your generated roadmap.</p>
+          </div>
+
+          <div id="matching-opportunities-container" class="opportunities-editorial-layout"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Node Detail Modal (Opens when user taps a node on the SVG map) -->
+  <div id="node-detail-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="node-modal-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" onclick="document.getElementById('node-detail-modal').classList.remove('open')">✕</button>
+      <span class="section-kicker">PATHWAY NODE</span>
+      <h3 id="node-modal-title" class="text-h3" style="margin-bottom: 12px;">Node Detail</h3>
+      <div id="node-modal-content"></div>
+      <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('node-detail-modal').classList.remove('open')">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom">
+        <div>© 2026 ORBIT · Built for South African Youth Career Mobility.</div>
+        <div class="opp-meta-unboxed">
+          <span>Start Where You Are</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Map Your Move</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initDiscoverPage } from '/js/discover.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initDiscoverPage();
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

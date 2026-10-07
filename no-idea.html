@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I Have No Idea (Visual Discovery) — ORBIT</title>
+  <meta name="description" content="A gentle, judgement-free, visual career discovery flow for South African youth who aren't sure where to start." />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ DISCOVERY</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Possibility Map</a>
+        <a href="no-idea.html" class="nav-link active">No Idea Mode</a>
+        <a href="opportunities.html" class="nav-link">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link">Saved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Possibility Map</a></li>
+      <li><a href="no-idea.html">No Idea Mode</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content" class="section">
+    <div class="site-container">
+      
+      <!-- Feature E: Dedicated Judgement-Free Flow Header -->
+      <div class="section-header" style="max-width: 820px;">
+        <div class="floating-signal-badge" style="display: inline-flex; margin-bottom: 12px;">
+          <span class="signal-dot" style="background: var(--color-solar-amber); box-shadow: 0 0 8px var(--color-solar-amber);"></span>
+          <span style="color: var(--color-solar-amber); font-weight: 700;">NO PRESSURE · NO CV REQUIRED · PURE INTUITION</span>
+        </div>
+        <h1 class="text-display" style="font-size: clamp(2.2rem, 4.4vw, 3.8rem);">
+          <span class="text-gradient-amber">I HAVE NO IDEA</span><br />
+          <span>WHAT I WANT TO DO.</span>
+        </h1>
+        <p class="text-lead" style="margin-top: 14px;">
+          That is completely normal. In South Africa, thousands of high school leavers and graduates feel stuck because no one shows them how their natural instincts connect to careers. Pick one card on each pair below based purely on your gut feeling.
+        </p>
+      </div>
+
+      <!-- Interactive This-Or-That Stepper -->
+      <div class="this-or-that-container" id="quiz-flow-container">
+        
+        <!-- Step Indicator -->
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 14px;">
+          <span class="current-stage-chip" id="quiz-step-badge">STEP 1 OF 4</span>
+          <span id="quiz-step-title" class="text-mono" style="font-size: 13px; color: var(--color-mint); font-weight: 600;">INSTINCT 01 · CREATION VS OPTIMIZATION</span>
+        </div>
+
+        <!-- Question View Container (Updated dynamically) -->
+        <div id="quiz-question-slot">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Result Card (Hidden until all 4 answered) -->
+        <div id="quiz-result-slot" style="display: none;">
+          <!-- Injected via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Fallback / Alternative Cross-Links -->
+      <section class="section-tight" style="margin-top: 48px; border-top: 1px solid var(--border-subtle); padding-top: 36px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+          <div>
+            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 6px;">Already know your starting situation?</h3>
+            <p style="font-size: 14px; color: var(--text-secondary);">
+              If you want to map from your exact credentials (Matric, TVET, University, or Unemployed), jump straight to the structured Possibility Map.
+            </p>
+          </div>
+          <a href="discover.html" class="btn btn-primary">
+            <span>GO TO START WHERE YOU ARE →</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom">
+        <div>© 2026 ORBIT · Built for South African Youth Career Mobility.</div>
+        <div class="opp-meta-unboxed">
+          <span>Map Your Move</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Judgement-Free Discovery</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Free Forever</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Interactive Judgement-Free Flow -->
+  <script type="module">
+    import { fetchOpportunities } from '/js/data.js';
+    import { renderOpportunityCard, attachBookmarkListeners, showToast } from '/js/render.js';
+    import { savePossibilityDna } from '/js/storage.js';
+
+    const QUIZ_STEPS = [
+      {
+        stepNum: 1,
+        title: 'INSTINCT 01 · CREATION VS OPTIMIZATION',
+        question: 'When you are faced with a blank canvas or a messy problem, what pulls you first?',
+        options: [
+          {
+            key: 'create',
+            icon: '🎨',
+            title: 'MAKE SOMETHING NEW',
+            desc: 'You love inventing from scratch — designing visual interfaces, writing code, producing content, or crafting physical objects.',
+            bias: { creative: 35, tech: 25, business: 15 }
+          },
+          {
+            key: 'fix',
+            icon: '🔧',
+            title: 'FIX & FIGURE OUT HOW IT WORKS',
+            desc: 'You love taking things apart, diagnosing why systems break down, solving tricky puzzles, and finding the cleanest solution.',
+            bias: { tech: 35, business: 25, leadership: 15 }
+          }
+        ]
+      },
+      {
+        stepNum: 2,
+        title: 'INSTINCT 02 · PEOPLE VS SYSTEMS',
+        question: 'Where do you naturally direct your focus and mental energy?',
+        options: [
+          {
+            key: 'people',
+            icon: '🤝',
+            title: 'WORK WITH PEOPLE & COMMUNITY',
+            desc: 'Understanding human psychology, mentoring others, organizing community groups, customer relationships, and social change.',
+            bias: { people: 40, leadership: 30, creative: 15 }
+          },
+          {
+            key: 'systems',
+            icon: '⚡',
+            title: 'WORK WITH TECHNOLOGY & DATA',
+            desc: 'Working with logical code, cloud architectures, network protocols, financial spreadsheets, and algorithmic efficiency.',
+            bias: { tech: 40, business: 25, creative: 10 }
+          }
+        ]
+      },
+      {
+        stepNum: 3,
+        title: 'INSTINCT 03 · TANGIBLE CRAFT VS BIG IDEAS',
+        question: 'What kind of output makes you feel most satisfied at the end of a day?',
+        options: [
+          {
+            key: 'hands',
+            icon: '🛠️',
+            title: 'HANDS-ON TANGIBLE ARTIFACT',
+            desc: 'A live working website, a finished video edit, a configured server, or a physical prototype you can touch and show people.',
+            bias: { tech: 30, creative: 30, people: 10 }
+          },
+          {
+            key: 'ideas',
+            icon: '💡',
+            title: 'STRATEGY, BLUEPRINTS & STORIES',
+            desc: 'A strategic plan, a business model, a research synthesis, or an inspiring pitch that gets people excited about a vision.',
+            bias: { business: 35, leadership: 30, people: 15 }
+          }
+        ]
+      },
+      {
+        stepNum: 4,
+        title: 'INSTINCT 04 · SOLO MASTERY VS TEAM VELOCITY',
+        question: 'In what environment do you thrive most without burning out?',
+        options: [
+          {
+            key: 'solo',
+            icon: '🎧',
+            title: 'DEEP SOLO CONCENTRATION',
+            desc: 'Quiet, uninterrupted focus with headphones on, diving deep into technical mastery, analysis, or creative depth.',
+            bias: { tech: 25, creative: 25, business: 15 }
+          },
+          {
+            key: 'team',
+            icon: '🚀',
+            title: 'HIGH-ENERGY COLLABORATION',
+            desc: 'Lively group discussions, rapid brainstorming hackathons, coordinating team roles, and pushing milestones together.',
+            bias: { leadership: 35, people: 35, business: 20 }
+          }
+        ]
+      }
+    ];
+
+    let currentStepIndex = 0;
+    let userChoices = [];
+    let allOpportunities = [];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      allOpportunities = await fetchOpportunities();
+      renderCurrentQuizStep();
+    });
+
+    function renderCurrentQuizStep() {
+      const stepData = QUIZ_STEPS[currentStepIndex];
+      const badge = document.getElementById('quiz-step-badge');
+      const title = document.getElementById('quiz-step-title');
+      const slot = document.getElementById('quiz-question-slot');
+      const resultSlot = document.getElementById('quiz-result-slot');
+
+      if (!slot) return;
+      resultSlot.style.display = 'none';
+      slot.style.display = 'block';
+
+      if (badge) badge.textContent = `STEP ${stepData.stepNum} OF ${QUIZ_STEPS.length}`;
+      if (title) title.textContent = stepData.title;
+
+      slot.innerHTML = `
+        <h2 class="text-h2" style="margin-bottom: 24px; text-wrap: balance;">
+          ${stepData.question}
+        </h2>
+
+        <div class="this-or-that-card-grid">
+          ${stepData.options.map((opt, i) => `
+            <div class="choice-polar-card" data-choice-index="${i}">
+              <div>
+                <span class="choice-icon-large" aria-hidden="true">${opt.icon}</span>
+                <span class="section-kicker" style="color: var(--color-cyber-cyan); margin-bottom: 6px;">OPTION 0${i + 1}</span>
+                <h3 class="choice-title">${opt.title}</h3>
+                <p class="choice-desc">${opt.desc}</p>
+              </div>
+              <div style="margin-top: 24px; display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 700; color: var(--color-cyber-cyan);">
+                <span>SELECT THIS WAY</span>
+                <span aria-hidden="true">→</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+
+      slot.querySelectorAll('.choice-polar-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const idx = parseInt(card.getAttribute('data-choice-index'), 10);
+          userChoices.push(stepData.options[idx]);
+
+          if (currentStepIndex < QUIZ_STEPS.length - 1) {
+            currentStepIndex++;
+            renderCurrentQuizStep();
+          } else {
+            renderQuizResults();
+          }
+        });
+      });
+    }
+
+    function renderQuizResults() {
+      const slot = document.getElementById('quiz-question-slot');
+      const resultSlot = document.getElementById('quiz-result-slot');
+      const badge = document.getElementById('quiz-step-badge');
+      const title = document.getElementById('quiz-step-title');
+
+      if (slot) slot.style.display = 'none';
+      if (!resultSlot) return;
+      resultSlot.style.display = 'block';
+
+      if (badge) badge.textContent = 'DISCOVERY COMPLETE';
+      if (title) title.textContent = 'YOUR INTUITIVE COMPASS';
+
+      // Aggregate scores
+      let scores = { tech: 40, creative: 40, business: 40, leadership: 40, people: 40 };
+      userChoices.forEach(choice => {
+        if (choice.bias) {
+          Object.keys(choice.bias).forEach(k => {
+            scores[k] = (scores[k] || 0) + choice.bias[k];
+          });
+        }
+      });
+
+      // Normalize scores between 45% and 92%
+      const maxVal = Math.max(...Object.values(scores));
+      const norm = {};
+      Object.keys(scores).forEach(k => {
+        norm[k] = Math.min(92, Math.round((scores[k] / maxVal) * 88));
+      });
+
+      // Determine archetype
+      let archetype = 'THE CREATIVE TECHNOLOGIST';
+      let headline = 'Interactive Digital Craft & Product Building';
+      let summary = 'You are energized by turning raw ideas into working reality. You prefer evidence over endless meetings, and you thrive when building things people can see, use, and love.';
+      let recommendedFields = ['Front-End & Mobile Development', 'UI/UX Interactive Design', 'Applied Creative AI & Media', 'Digital Product Innovation'];
+      let starterCategories = ['Jobs', 'Internships', 'Courses'];
+
+      if (norm.tech >= norm.creative && norm.tech >= norm.people) {
+        archetype = 'THE SYSTEMS BUILDER';
+        headline = 'Resilient Engineering & Infrastructure Problem-Solving';
+        summary = 'You enjoy figuring out how complex mechanisms function. South African enterprises in cloud, cybersecurity, and telecommunications are hungry for people with your analytical mindset.';
+        recommendedFields = ['Cloud Architecture & DevOps', 'Cybersecurity Engineering', 'Data Pipelines & Python', 'Network Support'];
+        starterCategories = ['Learnerships', 'Jobs', 'Courses'];
+      } else if (norm.business >= norm.creative && norm.leadership >= norm.tech) {
+        archetype = 'THE COMMUNITY VENTURE LEADER';
+        headline = 'Digital Operations, Strategy & Enterprise Builder';
+        summary = 'You connect dots that others miss. You bring people together around shared goals and turn constraints into sustainable income streams.';
+        recommendedFields = ['Product Management & Agile Ops', 'Digital Marketing & Growth', 'Youth Venture Incubation', 'Client Success & Tech Sales'];
+        starterCategories = ['Bursaries', 'Internships', 'Events'];
+      }
+
+      // Save DNA to user profile
+      savePossibilityDna({
+        tech: norm.tech,
+        creative: norm.creative,
+        business: norm.business,
+        leadership: norm.leadership,
+        people: norm.people,
+        archetype
+      });
+
+      // Find matching opportunities
+      const matched = allOpportunities.filter(o => 
+        starterCategories.includes(o.category) ||
+        o.title.toLowerCase().includes('junior') ||
+        o.title.toLowerCase().includes('intern')
+      ).slice(0, 3);
+
+      resultSlot.innerHTML = `
+        <div style="background: var(--bg-surface-elevated); border: 2px solid var(--color-cyber-cyan); border-radius: var(--radius-lg); padding: 36px; box-shadow: 0 16px 48px rgba(0, 229, 255, 0.14); margin-bottom: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+            <div>
+              <span class="section-kicker" style="color: var(--color-neon-mint); font-weight: 800;">YOU MIGHT THRIVE IN</span>
+              <h2 class="text-display" style="font-size: clamp(1.8rem, 3.4vw, 2.8rem); margin-top: 6px;">
+                <span class="text-gradient-cyan">${archetype}</span>
+              </h2>
+              <span style="font-size: 15px; color: var(--color-mint); font-weight: 600; display: block; margin-top: 4px;">${headline}</span>
+            </div>
+            <button id="quiz-restart-btn" class="btn btn-secondary btn-sm">
+              <span>↻ Retake Quiz</span>
+            </button>
+          </div>
+
+          <p class="text-lead" style="color: var(--text-primary); margin-bottom: 28px;">
+            ${summary}
+          </p>
+
+          <!-- DNA Bars Preview -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 28px; background: var(--bg-surface); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+            <div class="dna-bar-item">
+              <div class="dna-bar-header">
+                <span>TECH</span>
+                <span class="text-mono">${norm.tech}%</span>
+              </div>
+              <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${norm.tech}%;"></div></div>
+            </div>
+            <div class="dna-bar-item">
+              <div class="dna-bar-header">
+                <span>CREATIVE</span>
+                <span class="text-mono">${norm.creative}%</span>
+              </div>
+              <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${norm.creative}%;"></div></div>
+            </div>
+            <div class="dna-bar-item">
+              <div class="dna-bar-header">
+                <span>BUSINESS</span>
+                <span class="text-mono">${norm.business}%</span>
+              </div>
+              <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${norm.business}%;"></div></div>
+            </div>
+            <div class="dna-bar-item">
+              <div class="dna-bar-header">
+                <span>LEADERSHIP</span>
+                <span class="text-mono">${norm.leadership}%</span>
+              </div>
+              <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${norm.leadership}%;"></div></div>
+            </div>
+            <div class="dna-bar-item">
+              <div class="dna-bar-header">
+                <span>PEOPLE</span>
+                <span class="text-mono">${norm.people}%</span>
+              </div>
+              <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${norm.people}%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Fields to Explore -->
+          <div style="margin-bottom: 28px;">
+            <strong style="display: block; font-size: 13px; font-family: var(--font-mono); color: var(--color-mint); margin-bottom: 10px;">RECOMMENDED SOUTH AFRICAN FIELDS:</strong>
+            <div class="opp-meta-unboxed">
+              ${recommendedFields.map(f => `<span>${f}</span>`).join('<span class="opp-meta-sep" aria-hidden="true">·</span>')}
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="discover.html" class="btn btn-primary btn-lg">
+              <span>EXPLORE FULL POSSIBILITY MAP FOR THIS ARCHETYPE</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="saved.html" class="btn btn-secondary btn-lg">
+              <span>VIEW IN MY DOSSIER</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Curated Matching Starter Opportunities -->
+        <div style="margin-top: 36px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px;">
+            <div>
+              <span class="section-kicker">LOW BARRIER · HIGH GROWTH</span>
+              <h3 class="text-h2">Starter Opportunities Matching Your Instinct</h3>
+            </div>
+          </div>
+          <div id="no-idea-matches-container" class="opportunities-editorial-layout">
+            ${matched.map(renderOpportunityCard).join('')}
+          </div>
+        </div>
+      `;
+
+      attachBookmarkListeners(resultSlot);
+
+      const restartBtn = document.getElementById('quiz-restart-btn');
+      if (restartBtn) {
+        restartBtn.addEventListener('click', () => {
+          currentStepIndex = 0;
+          userChoices = [];
+          renderCurrentQuizStep();
+        });
+      }
+    }
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

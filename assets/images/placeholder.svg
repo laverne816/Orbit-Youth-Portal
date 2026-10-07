@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c2135"/>
+      <stop offset="100%" stop-color="#071523"/>
+    </linearGradient>
+    <linearGradient id="pathGrad" x1="100" y1="200" x2="500" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0099A3"/>
+      <stop offset="50%" stop-color="#006269"/>
+      <stop offset="100%" stop-color="#C8E7E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#bgGrad)"/>
+  <!-- Subtle geometric grid overlay -->
+  <g stroke="rgba(200,231,233,0.08)" stroke-width="1">
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+  </g>
+  <!-- Geometric motifs -->
+  <polygon points="300,110 325,145 300,180 275,145" fill="none" stroke="#C8E7E9" stroke-opacity="0.4" stroke-width="1.5"/>
+  <polygon points="300,220 325,255 300,290 275,255" fill="none" stroke="#0099A3" stroke-opacity="0.4" stroke-width="1.5"/>
+  <!-- Branching pathways -->
+  <path d="M120 200 C 200 130, 240 145, 300 145 C 360 145, 420 100, 480 120" stroke="url(#pathGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M120 200 C 200 270, 240 255, 300 255 C 360 255, 420 300, 480 280" stroke="url(#pathGrad)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M300 145 L 300 255" stroke="#0099A3" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <!-- Nodes -->
+  <circle cx="120" cy="200" r="8" fill="#071523" stroke="#0099A3" stroke-width="3"/>
+  <circle cx="300" cy="145" r="7" fill="#071523" stroke="#006269" stroke-width="2.5"/>
+  <circle cx="300" cy="255" r="7" fill="#071523" stroke="#C8E7E9" stroke-width="2.5"/>
+  <circle cx="480" cy="120" r="9" fill="#071523" stroke="#0099A3" stroke-width="3"/>
+  <circle cx="480" cy="280" r="9" fill="#071523" stroke="#C8E7E9" stroke-width="3"/>
+  <!-- Typography / Symbol -->
+  <text x="300" y="340" fill="#C8E7E9" font-family="'Space Grotesk', sans-serif" font-size="12" letter-spacing="4" text-anchor="middle" font-weight="600">ORBIT · POSSIBILITIES IN MOTION</text>
+</svg>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saved Pathways &amp; My Route — ORBIT</title>
+  <meta name="description" content="Track your saved possibilities, monitor application milestones, and celebrate career passport achievements on ORBIT." />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ MAP</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="opportunities.html" class="nav-link">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link active">Saved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover &amp; Map</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content" class="section">
+    <div class="site-container">
+      <div class="section-header">
+        <span class="section-kicker">PERSONAL COMMAND CENTRE</span>
+        <h1 class="text-display" style="font-size: clamp(2rem, 3.8vw, 3.2rem);">
+          My Route &amp; Saved Possibilities
+        </h1>
+        <p class="text-lead" style="margin-top: 8px;">
+          Track your progress through actionable milestones. Saved items and checklist progress are stored locally on this device.
+        </p>
+      </div>
+
+      <!-- Personal Profile Status Card -->
+      <div id="saved-profile-banner" class="user-profile-header-card">
+        <!-- Injected dynamically via script -->
+      </div>
+
+      <!-- Feature F: "My Route" Progress Tracker -->
+      <section class="section-tight" style="padding-top: 0;">
+        <span class="section-kicker">FEATURE F: PROGRESS ENGINE</span>
+        <h2 class="text-h3" style="margin-bottom: 12px;">My Route: Step-by-Step Progress</h2>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">
+          Tick milestones off as you complete them. Seeing visible momentum keeps you moving forward.
+        </p>
+
+        <div class="route-milestones-chain" id="route-milestones-container">
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="skill_identified" />
+            <span>01 · Skill Identified</span>
+          </label>
+          <span style="color: var(--text-muted); opacity: 0.5;">→</span>
+
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="course_enrolled" />
+            <span>02 · Free Course Enrolled</span>
+          </label>
+          <span style="color: var(--text-muted); opacity: 0.5;">→</span>
+
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="cv_updated" />
+            <span>03 · 2-Page CV Ready</span>
+          </label>
+          <span style="color: var(--text-muted); opacity: 0.5;">→</span>
+
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="portfolio_drafted" />
+            <span>04 · Proof Project Built</span>
+          </label>
+          <span style="color: var(--text-muted); opacity: 0.5;">→</span>
+
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="first_application" />
+            <span>05 · Application Submitted</span>
+          </label>
+          <span style="color: var(--text-muted); opacity: 0.5;">→</span>
+
+          <label class="milestone-item">
+            <input type="checkbox" class="milestone-checkbox" data-route-key="network_connected" />
+            <span>06 · Mentor / Peer Connected</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Feature Z: Career Passport Achievement System -->
+      <section class="section-tight">
+        <span class="section-kicker">FEATURE Z: ACHIEVEMENT RECOGNITION</span>
+        <h2 class="text-h3" style="margin-bottom: 12px;">Opportunity Passport</h2>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">
+          Tasteful milestones unlocked through your discovery journey on ORBIT.
+        </p>
+
+        <div class="passport-badges-grid" id="passport-badges-container">
+          <!-- Rendered dynamically via storage.js -->
+        </div>
+      </section>
+
+      <!-- Personal Possibility DNA Profile Card (scoped to active user) -->
+      <section class="section-tight" id="saved-dna-section">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <span class="section-kicker">FEATURE C: PROFILE CO-ORDINATES</span>
+            <h2 class="text-h3">My Possibility DNA</h2>
+          </div>
+          <a href="discover.html" class="btn btn-secondary btn-sm">
+            <span>Explore &amp; Recalibrate DNA →</span>
+          </a>
+        </div>
+        <div id="saved-dna-container"></div>
+      </section>
+
+      <!-- Feature N: Bookmarked Opportunities -->
+      <section class="section-tight" style="padding-top: 24px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <span class="section-kicker">FEATURE N: SAVED DIRECTORY</span>
+            <h2 class="text-h2">Saved Possibilities</h2>
+          </div>
+          <span id="saved-total-count" class="text-mono" style="font-size: 14px; color: var(--color-teal);">0 SAVED</span>
+        </div>
+
+        <div id="saved-opportunities-slot" class="opportunities-editorial-layout"></div>
+      </section>
+
+      <!-- Feature O: Recently Viewed -->
+      <section class="section-tight" style="padding-top: 32px;" id="recently-viewed-section">
+        <span class="section-kicker">FEATURE O: RECENTLY VIEWED</span>
+        <h2 class="text-h3" style="margin-bottom: 16px;">Continue Exploring (Last 5 Viewed)</h2>
+        <div id="recently-viewed-slot" class="opportunities-editorial-layout"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom">
+        <div>© 2026 ORBIT · Built for South African Youth Career Mobility.</div>
+        <div class="opp-meta-unboxed">
+          <span>Private on this device</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Zero Tracker Footprint</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { fetchOpportunities } from '/js/data.js';
+    import { 
+      getSavedIds, 
+      getRecentlyViewedIds, 
+      getRouteProgress, 
+      toggleRouteProgress, 
+      getUnlockedAchievements, 
+      PASSPORT_ACHIEVEMENTS,
+      getActiveUser,
+      signOutUser,
+      getPossibilityDna
+    } from '/js/storage.js';
+    import { renderOpportunityCard, renderEmptyState, attachBookmarkListeners, showToast } from '/js/render.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const all = await fetchOpportunities();
+
+      // 0. Render User Profile Banner
+      function renderProfileBanner() {
+        const banner = document.getElementById('saved-profile-banner');
+        if (!banner) return;
+
+        const user = getActiveUser();
+        if (user) {
+          banner.innerHTML = `
+            <div class="user-profile-meta-group">
+              <div class="user-profile-large-avatar">${user.avatarInitials}</div>
+              <div>
+                <span class="section-kicker" style="color: var(--color-mint); margin-bottom: 2px;">PERSONAL PROFILE ACTIVE</span>
+                <h2 style="font-size: 1.55rem; color: var(--color-white); margin-bottom: 4px;">${user.name}</h2>
+                <div class="opp-meta-unboxed" style="font-size: 13px;">
+                  <span>${user.email}</span>
+                  <span class="opp-meta-sep">·</span>
+                  <span>${user.situation}</span>
+                  <span class="opp-meta-sep">·</span>
+                  <span>${user.city || user.province}</span>
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <button id="banner-edit-profile-btn" class="btn btn-secondary btn-sm">Edit Profile</button>
+              <button id="banner-signout-btn" class="btn btn-sm" style="background: rgba(244, 63, 94, 0.15); color: #f87171;">Sign Out</button>
+            </div>
+          `;
+
+          const editBtn = banner.querySelector('#banner-edit-profile-btn');
+          if (editBtn) {
+            editBtn.addEventListener('click', () => {
+              const navBtn = document.getElementById('dropdown-open-profile-btn');
+              if (navBtn) navBtn.click();
+              else {
+                const profileModal = document.getElementById('profile-modal');
+                if (profileModal) profileModal.classList.add('open');
+              }
+            });
+          }
+
+          const signoutBtn = banner.querySelector('#banner-signout-btn');
+          if (signoutBtn) {
+            signoutBtn.addEventListener('click', () => {
+              signOutUser();
+              showToast('Signed out of profile.');
+            });
+          }
+        } else {
+          banner.innerHTML = `
+            <div>
+              <span class="section-kicker" style="color: var(--color-mint);">GUEST SESSION</span>
+              <h3 style="font-size: 1.35rem; color: var(--color-white); margin-bottom: 6px;">Sync Your Saved Opportunities</h3>
+              <p style="font-size: 14px; color: var(--text-secondary); max-width: 600px;">
+                You are currently browsing as a Guest. Create a profile or sign in to save your opportunities, milestones, and Possibility DNA across all your devices.
+              </p>
+            </div>
+            <button id="banner-auth-btn" class="btn btn-primary">
+              <span>Sign In / Create Account</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          `;
+
+          const authBtn = banner.querySelector('#banner-auth-btn');
+          if (authBtn) {
+            authBtn.addEventListener('click', () => {
+              const navAuth = document.getElementById('nav-auth-btn');
+              if (navAuth) navAuth.click();
+              else {
+                const authModal = document.getElementById('auth-modal');
+                if (authModal) authModal.classList.add('open');
+              }
+            });
+          }
+        }
+      }
+
+      renderProfileBanner();
+      const onAuthChange = () => {
+        renderProfileBanner();
+        renderSavedList();
+        renderRouteCheckpoints();
+        renderUserDna();
+      };
+      window.addEventListener('orbit:auth-changed', onAuthChange);
+      window.addEventListener('ubunye:auth-changed', onAuthChange);
+
+      // 1. Render Route Checkpoints
+      function renderRouteCheckpoints() {
+        const routeData = getRouteProgress();
+        document.querySelectorAll('.milestone-checkbox[data-route-key]').forEach(cb => {
+          const key = cb.getAttribute('data-route-key');
+          cb.checked = !!routeData[key];
+          const span = cb.nextElementSibling;
+          if (span && cb.checked) {
+            span.style.color = 'var(--color-mint)';
+          } else if (span) {
+            span.style.color = '';
+          }
+
+          // Ensure unique change listener
+          cb.onchange = () => {
+            const updated = toggleRouteProgress(key);
+            cb.checked = !!updated[key];
+            if (span) {
+              span.style.color = cb.checked ? 'var(--color-mint)' : '';
+            }
+          };
+        });
+      }
+      renderRouteCheckpoints();
+
+      // 2. Render Passport Achievements
+      const unlocked = getUnlockedAchievements();
+      const passportContainer = document.getElementById('passport-badges-container');
+      if (passportContainer) {
+        passportContainer.innerHTML = PASSPORT_ACHIEVEMENTS.map(ach => {
+          const isUnlocked = unlocked.includes(ach.key);
+          return `
+            <div class="achievement-badge-card ${isUnlocked ? 'unlocked' : ''}">
+              <span class="achievement-icon" aria-hidden="true">${ach.icon}</span>
+              <strong style="font-size: 13px; color: var(--text-primary);">${ach.title}</strong>
+              <p style="font-size: 11px; color: var(--text-secondary); line-height: 1.4;">${ach.desc}</p>
+              <span style="font-family: var(--font-mono); font-size: 10px; color: ${isUnlocked ? 'var(--accent-emerald)' : 'var(--text-muted)'}; font-weight: 600;">
+                ${isUnlocked ? 'UNLOCKED' : 'LOCKED'}
+              </span>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // 2.5 Render Possibility DNA
+      function renderUserDna() {
+        const dnaContainer = document.getElementById('saved-dna-container');
+        if (!dnaContainer) return;
+        const dna = getPossibilityDna();
+        if (dna) {
+          dnaContainer.innerHTML = `
+            <div class="possibility-dna-card">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                <div>
+                  <span class="section-kicker" style="color: var(--color-mint);">CAREER ARCHETYPE</span>
+                  <h3 style="font-size: 1.5rem; color: var(--color-white); margin-top: 4px;">${dna.archetype || 'THE BUILDER'}</h3>
+                </div>
+                <span class="text-mono" style="font-size: 12px; color: var(--color-teal); background: var(--bg-surface-subtle); padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                  PROFILE ACTIVE
+                </span>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 20px;">
+                <div class="dna-bar-item">
+                  <div class="dna-bar-header">
+                    <span>TECHNOLOGY</span>
+                    <span class="text-mono">${dna.tech || 80}%</span>
+                  </div>
+                  <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${dna.tech || 80}%;"></div></div>
+                </div>
+                <div class="dna-bar-item">
+                  <div class="dna-bar-header">
+                    <span>CREATIVE &amp; DESIGN</span>
+                    <span class="text-mono">${dna.creative || 60}%</span>
+                  </div>
+                  <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${dna.creative || 60}%;"></div></div>
+                </div>
+                <div class="dna-bar-item">
+                  <div class="dna-bar-header">
+                    <span>BUSINESS &amp; SYSTEMS</span>
+                    <span class="text-mono">${dna.business || 50}%</span>
+                  </div>
+                  <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${dna.business || 50}%;"></div></div>
+                </div>
+                <div class="dna-bar-item">
+                  <div class="dna-bar-header">
+                    <span>LEADERSHIP</span>
+                    <span class="text-mono">${dna.leadership || 55}%</span>
+                  </div>
+                  <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${dna.leadership || 55}%;"></div></div>
+                </div>
+                <div class="dna-bar-item">
+                  <div class="dna-bar-header">
+                    <span>PEOPLE &amp; COMMUNITY</span>
+                    <span class="text-mono">${dna.people || 45}%</span>
+                  </div>
+                  <div class="dna-bar-track"><div class="dna-bar-fill" style="width: ${dna.people || 45}%;"></div></div>
+                </div>
+              </div>
+
+              <div style="font-size: 12px; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+                Exploratory career profile — designed to help you discover possibilities, not determine your future.
+              </div>
+            </div>
+          `;
+        } else {
+          dnaContainer.innerHTML = `
+            <div style="background: var(--bg-surface); border: 1px dashed var(--border-strong); border-radius: var(--radius-md); padding: 32px; text-align: center;">
+              <span class="section-kicker" style="color: var(--color-mint);">NO DNA SCORED YET</span>
+              <h4 style="font-size: 1.2rem; color: var(--text-primary); margin: 6px 0 10px;">Discover Your Possibility DNA</h4>
+              <p style="font-size: 14px; color: var(--text-secondary); max-width: 500px; margin: 0 auto 18px;">
+                Take our 60-second "Start Where You Are" discovery flow to calculate your Tech, Creative, Business, and Leadership percentages.
+              </p>
+              <a href="discover.html" class="btn btn-primary btn-sm">
+                <span>Start Visual Discovery →</span>
+              </a>
+            </div>
+          `;
+        }
+      }
+      renderUserDna();
+
+      // 3. Render Saved Opportunities
+      function renderSavedList() {
+        const savedIds = getSavedIds();
+        const slot = document.getElementById('saved-opportunities-slot');
+        const countEl = document.getElementById('saved-total-count');
+
+        if (countEl) countEl.textContent = `${savedIds.length} SAVED`;
+
+        if (!slot) return;
+
+        if (savedIds.length === 0) {
+          slot.innerHTML = renderEmptyState(
+            'No opportunities saved yet',
+            'Click the "Save" bookmark button on any opportunity to track it here on your personal pathway.',
+            'opportunities.html',
+            'Explore Possibilities Catalogue'
+          );
+          return;
+        }
+
+        const savedItems = all.filter(o => savedIds.includes(o.id));
+        slot.innerHTML = savedItems.map(renderOpportunityCard).join('');
+        attachBookmarkListeners(slot);
+      }
+
+      renderSavedList();
+      window.addEventListener('orbit:saved-changed', renderSavedList);
+      window.addEventListener('ubunye:saved-changed', renderSavedList);
+
+      // 4. Render Recently Viewed
+      const recentIds = getRecentlyViewedIds();
+      const recentSlot = document.getElementById('recently-viewed-slot');
+      if (recentSlot) {
+        if (recentIds.length === 0) {
+          recentSlot.innerHTML = '<p style="color: var(--text-muted); font-size: 14px;">No recently viewed opportunities yet. Start by browsing the directory.</p>';
+        } else {
+          const recentItems = all.filter(o => recentIds.includes(o.id));
+          recentSlot.innerHTML = recentItems.map(renderOpportunityCard).join('');
+          attachBookmarkListeners(recentSlot);
+        }
+      }
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

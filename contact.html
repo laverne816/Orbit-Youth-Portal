@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect &amp; Contact — ORBIT</title>
+  <meta name="description" content="Get in touch with the ORBIT team. Partner with us, submit youth opportunities, or ask questions about our career discovery platform." />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Safety Banner -->
+  <aside class="global-safety-banner" aria-label="Official Scam Awareness Advisory">
+    <div class="site-container safety-banner-inner">
+      <span class="safety-pill-text">⚠️ SCAM ALERT:</span>
+      <span>Never pay application or interview fees · Legitimate South African employers &amp; SETAs never charge candidates.</span>
+    </div>
+  </aside>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ MAP</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="opportunities.html" class="nav-link">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link">Saved</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover &amp; Map</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content" class="section">
+    <div class="site-container">
+      <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: flex-start;">
+        <!-- Left: Contact Form -->
+        <div>
+          <span class="section-kicker">COMMUNITY &amp; PARTNERSHIPS</span>
+          <h1 class="text-display" style="font-size: clamp(2rem, 3.8vw, 3rem); margin-bottom: 12px;">
+            Let's Connect.
+          </h1>
+          <p class="text-lead" style="margin-bottom: 32px;">
+            Whether you are a young person exploring possibilities, an accredited employer with opportunities to list, or an educational partner: send us a note.
+          </p>
+
+          <!-- Accessible Success Banner -->
+          <div id="contact-form-success" class="form-success-banner" tabindex="-1" role="status">
+            <h3 style="color: var(--accent-emerald); font-size: 1.25rem; margin-bottom: 6px;">Message received. Thanks for reaching out.</h3>
+            <p style="color: var(--text-secondary); font-size: 14px;">
+              Our ecosystem coordination team reviews every inquiry and will respond within 48 business hours.
+            </p>
+          </div>
+
+          <!-- Interactive Form -->
+          <form id="orbit-contact-form" class="contact-form-card" novalidate>
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Kagiso Motsepe" required aria-describedby="name-error" />
+              <span id="name-error" class="form-error-msg" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. kagiso@example.co.za" required aria-describedby="email-error" />
+              <span id="email-error" class="form-error-msg" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-type" class="form-label">I am reaching out as:</label>
+              <select id="contact-type" class="form-control" style="cursor: pointer;">
+                <option value="youth">Young person seeking pathway advice</option>
+                <option value="employer">Employer / Partner listing an opportunity</option>
+                <option value="institution">TVET / University / Non-profit</option>
+                <option value="general">General inquiry / Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject *</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Brief summary of your message" required aria-describedby="subject-error" />
+              <span id="subject-error" class="form-error-msg" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message * (minimum 15 characters)</label>
+              <textarea id="contact-message" rows="5" class="form-control" placeholder="Tell us how we can assist or collaborate..." required aria-describedby="message-error"></textarea>
+              <span id="message-error" class="form-error-msg" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 12px;">
+              <span>SEND MESSAGE</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Information & FAQ Cards -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          <div class="detail-section-card">
+            <span class="section-kicker">ECOSYSTEM DIRECTORY</span>
+            <h3 style="font-size: 1.25rem;">Ecosystem Hubs</h3>
+            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6; margin-bottom: 16px;">
+              ORBIT collaborates with innovation laboratories, university incubators, and SETA training academies nationwide:
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 10px; font-size: 13px;">
+              <div>
+                <strong>Western Cape:</strong>
+                <span style="color: var(--text-secondary);">Woodstock &amp; Khayelitsha Innovation Labs</span>
+              </div>
+              <div>
+                <strong>Gauteng:</strong>
+                <span style="color: var(--text-secondary);">Braamfontein Tshimologong &amp; Hatfield Precinct</span>
+              </div>
+              <div>
+                <strong>KwaZulu-Natal:</strong>
+                <span style="color: var(--text-secondary);">Durban Morningside &amp; Umlazi Tech Hubs</span>
+              </div>
+              <div>
+                <strong>Eastern Cape:</strong>
+                <span style="color: var(--text-secondary);">East London &amp; Gqeberha Creative Works</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="safety-check-panel">
+            <h4>
+              <span aria-hidden="true">🛡️</span>
+              <span>Our Youth Charter &amp; Vetting</span>
+            </h4>
+            <p style="color: var(--text-secondary); font-size: 13px; line-height: 1.6;">
+              ORBIT does not charge job seekers, learners, or candidates. Every opportunity listed is reviewed against our Scam Prevention Guidelines before publication.
+            </p>
+          </div>
+
+          <div class="detail-section-card" style="font-size: 13px;">
+            <strong style="color: var(--text-primary); display: block; margin-bottom: 8px;">Direct Response Window:</strong>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Inquiries are acknowledged within 48 business hours. We operate Monday to Friday, 08:30 – 17:00 SAST.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom">
+        <div>© 2026 ORBIT · Built for South African Youth Career Mobility.</div>
+        <div class="opp-meta-unboxed">
+          <span>ORBIT: Youth Trajectory Platform</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Zero-Slop Standard</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { initContactForm } from '/js/forms.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      initContactForm();
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

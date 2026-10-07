@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" fill="none">
+  <defs>
+    <radialGradient id="heroGlow1" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#0099A3" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0099A3" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroGlow2" cx="70%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#006269" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#006269" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="streamGrad1" x1="100" y1="300" x2="900" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0099A3"/>
+      <stop offset="40%" stop-color="#C8E7E9"/>
+      <stop offset="70%" stop-color="#DBE9EE"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="streamGrad2" x1="100" y1="300" x2="900" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0099A3"/>
+      <stop offset="50%" stop-color="#006269"/>
+      <stop offset="100%" stop-color="#C8E7E9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="#071523" rx="20"/>
+  <rect width="1000" height="600" fill="url(#heroGlow1)" rx="20"/>
+  <rect width="1000" height="600" fill="url(#heroGlow2)" rx="20"/>
+
+  <!-- Matrix of constellation micro-dots -->
+  <g fill="#C8E7E9" fill-opacity="0.3">
+    <circle cx="200" cy="120" r="1.5"/><circle cx="280" cy="160" r="1.5"/><circle cx="360" cy="110" r="1.5"/>
+    <circle cx="440" cy="170" r="1.5"/><circle cx="520" cy="130" r="1.5"/><circle cx="600" cy="190" r="1.5"/>
+    <circle cx="680" cy="140" r="1.5"/><circle cx="760" cy="180" r="1.5"/><circle cx="840" cy="130" r="1.5"/>
+    <circle cx="200" cy="480" r="1.5"/><circle cx="280" cy="440" r="1.5"/><circle cx="360" cy="490" r="1.5"/>
+    <circle cx="440" cy="430" r="1.5"/><circle cx="520" cy="470" r="1.5"/><circle cx="600" cy="410" r="1.5"/>
+    <circle cx="680" cy="460" r="1.5"/><circle cx="760" cy="420" r="1.5"/><circle cx="840" cy="470" r="1.5"/>
+  </g>
+
+  <!-- Geometric diamond chevrons inspired by Southern African beadwork geometry -->
+  <g stroke="rgba(200,231,233,0.14)" stroke-width="1.5" fill="none">
+    <polygon points="500,60 540,110 500,160 460,110"/>
+    <polygon points="500,440 540,490 500,540 460,490"/>
+    <polygon points="260,260 285,295 260,330 235,295"/>
+    <polygon points="740,260 765,295 740,330 715,295"/>
+  </g>
+
+  <!-- Flowing Possibility Lines -->
+  <!-- Upper Route: The Builder & Innovator -->
+  <path d="M120 300 C 220 300, 260 170, 380 170 C 500 170, 560 130, 680 130 C 780 130, 830 160, 890 160"
+        stroke="url(#streamGrad1)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Middle Route: The Direct Venture -->
+  <path d="M120 300 C 250 300, 320 270, 460 270 C 580 270, 680 290, 890 290"
+        stroke="#0099A3" stroke-width="2.5" stroke-dasharray="8 6" stroke-linecap="round"/>
+
+  <!-- Lower Route: The Artisan & Systems Specialist -->
+  <path d="M120 300 C 220 300, 280 430, 420 430 C 540 430, 640 470, 760 470 C 820 470, 850 440, 890 440"
+        stroke="url(#streamGrad2)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Vertical Cross-Pollen Crossings (Interconnectedness) -->
+  <path d="M380 170 C 400 230, 400 360, 420 430" stroke="#0099A3" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M680 130 C 660 230, 690 380, 760 470" stroke="#C8E7E9" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Origin Node: START WHERE YOU ARE (YOU) -->
+  <g>
+    <circle cx="120" cy="300" r="26" fill="#0c2135" stroke="#0099A3" stroke-width="2.5"/>
+    <circle cx="120" cy="300" r="16" fill="#0099A3" fill-opacity="0.2"/>
+    <circle cx="120" cy="300" r="7" fill="#0099A3"/>
+    <text x="120" y="348" fill="#FFFFFF" font-family="'Merriweather', serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">YOU</text>
+    <text x="120" y="364" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" text-anchor="middle">START HERE</text>
+  </g>
+
+  <!-- Waypoint Nodes: LEARN / BUILD / EXPERIENCE -->
+  <g>
+    <!-- Node 1: LEARN -->
+    <circle cx="380" cy="170" r="18" fill="#0c2135" stroke="#0099A3" stroke-width="2"/>
+    <circle cx="380" cy="170" r="5" fill="#0099A3"/>
+    <text x="380" y="140" fill="#DBE9EE" font-family="'Roboto', sans-serif" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">01 · LEARN</text>
+
+    <!-- Node 2: BUILD -->
+    <circle cx="460" cy="270" r="16" fill="#0c2135" stroke="#C8E7E9" stroke-width="2"/>
+    <circle cx="460" cy="270" r="4" fill="#C8E7E9"/>
+    <text x="460" y="245" fill="#DBE9EE" font-family="'Roboto', sans-serif" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">02 · BUILD</text>
+
+    <!-- Node 3: WORK / EXPERIENCE -->
+    <circle cx="420" cy="430" r="18" fill="#0c2135" stroke="#006269" stroke-width="2"/>
+    <circle cx="420" cy="430" r="5" fill="#006269"/>
+    <text x="420" y="468" fill="#DBE9EE" font-family="'Roboto', sans-serif" font-size="11" font-weight="600" letter-spacing="1" text-anchor="middle">03 · WORK</text>
+
+    <!-- Intermediate Nodes -->
+    <circle cx="680" cy="130" r="14" fill="#0c2135" stroke="#DBE9EE" stroke-width="2"/>
+    <circle cx="680" cy="130" r="4" fill="#DBE9EE"/>
+    <text x="680" y="105" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" letter-spacing="1" text-anchor="middle">MASTERY</text>
+
+    <circle cx="760" cy="470" r="14" fill="#0c2135" stroke="#0099A3" stroke-width="2"/>
+    <circle cx="760" cy="470" r="4" fill="#0099A3"/>
+    <text x="760" y="505" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" letter-spacing="1" text-anchor="middle">LEADERSHIP</text>
+  </g>
+
+  <!-- Destination Nodes: FUTURE HORIZONS -->
+  <g>
+    <!-- Future 1 -->
+    <circle cx="890" cy="160" r="22" fill="#0c2135" stroke="#0099A3" stroke-width="2.5"/>
+    <circle cx="890" cy="160" r="7" fill="#0099A3"/>
+    <text x="890" y="125" fill="#FFFFFF" font-family="'Merriweather', serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">THE BUILDER</text>
+    <text x="890" y="198" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" text-anchor="middle">SOFTWARE / AI SYSTEMS</text>
+
+    <!-- Future 2 -->
+    <circle cx="890" cy="290" r="20" fill="#0c2135" stroke="#C8E7E9" stroke-width="2.5"/>
+    <circle cx="890" cy="290" r="6" fill="#C8E7E9"/>
+    <text x="890" y="260" fill="#FFFFFF" font-family="'Merriweather', serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">THE CREATOR</text>
+    <text x="890" y="325" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" text-anchor="middle">PRODUCT / DESIGN LEAD</text>
+
+    <!-- Future 3 -->
+    <circle cx="890" cy="440" r="22" fill="#0c2135" stroke="#006269" stroke-width="2.5"/>
+    <circle cx="890" cy="440" r="7" fill="#006269"/>
+    <text x="890" y="410" fill="#FFFFFF" font-family="'Merriweather', serif" font-size="12" font-weight="700" letter-spacing="1" text-anchor="middle">THE FOUNDER</text>
+    <text x="890" y="478" fill="#C8E7E9" font-family="'Roboto', sans-serif" font-size="10" text-anchor="middle">TECH ENTERPRISE</text>
+  </g>
+</svg>

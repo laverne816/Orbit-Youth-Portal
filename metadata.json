@@ -1,0 +1,8 @@
+{
+  "name": "UBUNYE — South African Youth Career Discovery",
+  "description": "A futurist South African youth career discovery platform. Start where you are — then see where you could go with interactive possibility mapping, curated pathways, and local opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

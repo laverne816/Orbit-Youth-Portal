@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORBIT — South African Youth Career Discovery</title>
+  <meta name="description" content="A futurist South African youth career discovery platform. Start where you are — then see where you could go with interactive possibility mapping, curated pathways, and local opportunities." />
+  <meta property="og:title" content="ORBIT — South African Youth Career Discovery" />
+  <meta property="og:description" content="A futurist South African youth career discovery platform. Start where you are — then see where you could go with interactive possibility mapping, curated pathways, and local opportunities." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <!-- Keyboard accessibility skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Scam Awareness Banner -->
+  <aside class="global-safety-banner" aria-label="Official Scam Awareness Advisory">
+    <div class="site-container safety-banner-inner">
+      <span class="safety-pill-text">⚠️ SCAM ALERT:</span>
+      <span>Never pay application or interview fees · Legitimate South African employers &amp; SETAs never charge candidates.</span>
+      <a href="opportunity.html?id=ubu-001#safety" style="color: var(--accent-amber); text-decoration: underline; font-weight: 600;">Learn Safety Rules</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Top Navigation (Zone 1: Wordmark, Zone 2: 5 Clean Text Links, Zone 3: Actions) -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <!-- Zone 1: Single text element wordmark -->
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ MAP</span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="opportunities.html" class="nav-link">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link">Saved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Zone 3: Primary Actions -->
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover &amp; Map</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 13px; color: var(--text-muted);">
+      ORBIT · Personal Possibility Map for South African Youth
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- 2. Futuristic Hero Section -->
+    <section class="hero-section">
+      <div class="site-container hero-grid">
+        <div class="hero-content">
+          <div class="floating-signal-badge">
+            <span class="signal-dot"></span>
+            <span id="hero-live-signal">26 POSSIBILITIES ACTIVE · 8 CLOSING THIS MONTH</span>
+          </div>
+
+          <h1 class="text-display">
+            <span class="text-gradient-cyan">MAP YOUR MOVE.</span>
+          </h1>
+
+          <p class="text-lead">
+            ORBIT is a Personal Possibility Map for South African youth. Start exactly where you are today — then watch branching pathways connect your skills, curiosity, and situation to accredited learning, work, and funding.
+          </p>
+
+          <div class="hero-actions">
+            <a href="discover.html" class="btn btn-primary btn-lg">
+              <span>START WHERE YOU ARE</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="no-idea.html" class="btn btn-outline-amber btn-lg">
+              <span>I HAVE NO IDEA WHAT I WANT TO DO</span>
+            </a>
+          </div>
+
+          <!-- Unboxed social proof adjacency -->
+          <div class="opp-meta-unboxed" style="margin-top: 8px;">
+            <span>Zero application fees</span>
+            <span class="opp-meta-sep" aria-hidden="true">·</span>
+            <span>Covering all 9 SA provinces</span>
+            <span class="opp-meta-sep" aria-hidden="true">·</span>
+            <span>Accredited SETA &amp; Enterprise listings</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="/assets/images/hero.svg" alt="Abstract visualization of branching career pathways across South Africa" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. "Start Where You Are" Entry Card -->
+    <section class="section-tight">
+      <div class="site-container">
+        <div class="start-here-banner">
+          <div class="start-here-text">
+            <span class="section-kicker">PERSONAL POSSIBILITY ENGINE</span>
+            <h2 class="text-h2" style="font-size: 1.85rem;">Don't pick a job title. Map your possibilities.</h2>
+            <p style="color: var(--text-secondary); max-width: 640px; margin-top: 6px;">
+              Tell us your current reality (matriculant, graduate, TVET student, or pivoting) and answer 3 intuitive questions to generate your dynamic visual route.
+            </p>
+          </div>
+          <a href="discover.html" class="btn btn-primary">
+            <span>LAUNCH YOUR MAP</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Possibility Map Preview -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header" style="text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">
+          <span class="section-kicker">SIGNATURE MOTIF</span>
+          <h2 class="text-h2">Branching Pathways, Not Dead Ends</h2>
+          <p class="text-lead" style="margin-top: 8px;">
+            Unlike traditional job boards that discard candidates without experience, ORBIT reveals every bridge: from basic skills to practical portfolios, learnership stipends, and junior roles.
+          </p>
+        </div>
+
+        <div class="map-canvas-container" style="text-align: center; padding: 48px 24px;">
+          <img src="/assets/images/hero.svg" alt="Preview of Possibility Map" style="max-height: 380px; width: 100%; object-fit: contain; border-radius: var(--radius-md);" />
+          <div style="margin-top: 24px;">
+            <a href="discover.html" class="btn btn-secondary">
+              <span>EXPLORE FULL INTERACTIVE MAPPER</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. What Are You Looking For? (6 Tiles) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">OPPORTUNITY PILLARS</span>
+          <h2 class="text-h2">What Are You Looking For?</h2>
+          <p class="text-lead">Explore curated categories built for the South African youth ecosystem.</p>
+        </div>
+
+        <div class="discovery-tiles-grid" id="discovery-tiles-container">
+          <!-- Rendered dynamically via renderDiscoveryTiles() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Find Your Next Move (Discovery Search Engine) -->
+    <section class="section" id="search-section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">DISCOVERY ENGINE</span>
+          <h2 class="text-h2">Find Your Next Move</h2>
+          <p class="text-lead">Filter real opportunities across category, province, and experience levels.</p>
+        </div>
+
+        <div class="search-engine-box">
+          <div class="search-input-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="home-search-input" class="search-input" placeholder="Search 'Cape Town junior developer'..." aria-label="Search opportunities by keyword, title, or skill" />
+          </div>
+
+          <div class="filters-row">
+            <select id="home-category-select" class="filter-select" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="Jobs">Jobs</option>
+              <option value="Internships">Internships</option>
+              <option value="Learnerships">Learnerships</option>
+              <option value="Bursaries">Bursaries</option>
+              <option value="Courses">Courses</option>
+              <option value="Events">Events</option>
+            </select>
+
+            <select id="home-province-select" class="filter-select" aria-label="Filter by province">
+              <option value="all">All Provinces</option>
+              <option value="Western Cape">Western Cape</option>
+              <option value="Gauteng">Gauteng</option>
+              <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+              <option value="Eastern Cape">Eastern Cape</option>
+              <option value="Free State">Free State</option>
+              <option value="Limpopo">Limpopo</option>
+              <option value="Mpumalanga">Mpumalanga</option>
+              <option value="Northern Cape">Northern Cape</option>
+              <option value="National / Remote">National / Remote</option>
+            </select>
+
+            <select id="home-experience-select" class="filter-select" aria-label="Filter by experience level">
+              <option value="all">All Experience Levels</option>
+              <option value="No Experience Required">No Experience Required</option>
+              <option value="Student / Matric">Student / Matric</option>
+              <option value="Entry Level">Entry Level</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+
+            <a id="home-discover-btn" href="opportunities.html" class="btn btn-primary" style="margin-left: auto;">
+              <span>DISCOVER ALL</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div id="home-search-announcer" class="sr-only" aria-live="polite"></div>
+        <div id="home-search-results" class="opportunities-editorial-layout"></div>
+      </div>
+    </section>
+
+    <!-- 7. Today's Possibility (Date-Hashed Feature) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">EDITORIAL SPOTLIGHT</span>
+          <h2 class="text-h2">Today's Possibility</h2>
+        </div>
+        <div id="todays-possibility-slot"></div>
+      </div>
+    </section>
+
+    <!-- 8. Featured Opportunities (Editorial) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <span class="section-kicker">CURATED ROSTER</span>
+            <h2 class="text-h2">Featured Opportunities</h2>
+          </div>
+          <a href="opportunities.html" class="btn btn-secondary btn-sm">
+            <span>Browse All 26 Listings</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div id="featured-roster-slot" class="opportunities-editorial-layout"></div>
+      </div>
+    </section>
+
+    <!-- 9. Don't Miss The Window (Closing Soon + Live Countdowns) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker" style="color: var(--accent-crimson);">DEADLINE HORIZON</span>
+          <h2 class="text-h2">Don't Miss The Window</h2>
+          <p class="text-lead">Opportunities closing in the next few days. Prepare your documentation early.</p>
+        </div>
+
+        <div id="closing-soon-slot" class="opportunities-editorial-layout"></div>
+      </div>
+    </section>
+
+    <!-- 10. Your Path Isn't Linear (Interactive Pathway) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header" style="text-align: center; max-width: 680px; margin: 0 auto;">
+          <span class="section-kicker">METHODOLOGY</span>
+          <h2 class="text-h2">Your Path Isn't Linear</h2>
+          <p class="text-lead">Growth doesn't happen in straight steps. Here is how modern South African youth build momentum:</p>
+        </div>
+
+        <div class="non-linear-path-flow">
+          <div class="path-step-card" data-toolkit-open="cv">
+            <span class="path-step-index">01</span>
+            <h3 class="path-step-name">DISCOVER</h3>
+            <p class="path-step-desc">Acknowledge where you are without shame or pretense.</p>
+          </div>
+          <div class="path-step-card" data-toolkit-open="cv">
+            <span class="path-step-index">02</span>
+            <h3 class="path-step-name">LEARN</h3>
+            <p class="path-step-desc">Pick up 1-2 practical digital skills with free courses.</p>
+          </div>
+          <div class="path-step-card" data-toolkit-open="portfolio">
+            <span class="path-step-index">03</span>
+            <h3 class="path-step-name">BUILD</h3>
+            <p class="path-step-desc">Create 2 tangible proof projects to demonstrate ability.</p>
+          </div>
+          <div class="path-step-card" data-toolkit-open="interview">
+            <span class="path-step-index">04</span>
+            <h3 class="path-step-name">EXPERIENCE</h3>
+            <p class="path-step-desc">Join a learnership or paid residency to get real reps.</p>
+          </div>
+          <div class="path-step-card" data-toolkit-open="linkedin">
+            <span class="path-step-index">05</span>
+            <h3 class="path-step-name">APPLY</h3>
+            <p class="path-step-desc">Target vetted opportunities with verified credentials.</p>
+          </div>
+          <div class="path-step-card" data-toolkit-open="linkedin">
+            <span class="path-step-index">06</span>
+            <h3 class="path-step-name">GROW</h3>
+            <p class="path-step-desc">Lift others as you climb, building community wealth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Trending Skills -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">IN-DEMAND CAPABILITIES</span>
+          <h2 class="text-h2">Trending Skills in South Africa</h2>
+          <p class="text-lead">Click any skill to filter matching entry-level listings and training bootcamps.</p>
+        </div>
+
+        <div id="trending-skills-container" class="segmented-pills-bar">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. From My City (Local Opportunity Landscape) -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">LOCALIZED OPPORTUNITY MAP</span>
+          <h2 class="text-h2">From My City</h2>
+          <p class="text-lead">Real opportunity distributions calculated across major South African urban centres.</p>
+        </div>
+
+        <div class="city-landscape-widget">
+          <div class="city-tabs-scroll" id="city-tabs-container">
+            <button class="city-tab-btn active" data-city="cape-town">Cape Town</button>
+            <button class="city-tab-btn" data-city="johannesburg">Johannesburg</button>
+            <button class="city-tab-btn" data-city="pretoria">Pretoria</button>
+            <button class="city-tab-btn" data-city="durban">Durban</button>
+            <button class="city-tab-btn" data-city="gqeberha">Gqeberha</button>
+            <button class="city-tab-btn" data-city="bloemfontein">Bloemfontein</button>
+            <button class="city-tab-btn" data-city="polokwane">Polokwane</button>
+            <button class="city-tab-btn" data-city="mbombela">Mbombela</button>
+            <button class="city-tab-btn" data-city="kimberley">Kimberley</button>
+            <button class="city-tab-btn" data-city="east-london">East London</button>
+          </div>
+
+          <div id="city-breakdown-display">
+            <!-- Dynamic count row -->
+          </div>
+
+          <div id="city-opportunities-list" class="opportunities-editorial-layout" style="margin-top: 24px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Career Toolkit Teaser -->
+    <section class="section">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">WORK-READY PLAYBOOKS</span>
+          <h2 class="text-h2">Career Toolkit</h2>
+          <p class="text-lead">Practical, jargon-free checklists designed for South African recruitment reality.</p>
+        </div>
+
+        <div class="discovery-tiles-grid">
+          <div class="discovery-tile" data-toolkit-open="cv" style="cursor: pointer;">
+            <div>
+              <span class="tile-num">TOOLKIT 01</span>
+              <h3 class="tile-title">CV Checklist</h3>
+              <p class="tile-desc">2-page layout, South African standard conventions, project showcase, and privacy protection.</p>
+            </div>
+            <div class="tile-footer"><span>OPEN CHECKLIST →</span></div>
+          </div>
+
+          <div class="discovery-tile" data-toolkit-open="interview" style="cursor: pointer;">
+            <div>
+              <span class="tile-num">TOOLKIT 02</span>
+              <h3 class="tile-title">Interview Guide</h3>
+              <p class="tile-desc">Handling virtual Microsoft Teams panels, load shedding backups, and the STAR framework.</p>
+            </div>
+            <div class="tile-footer"><span>OPEN GUIDE →</span></div>
+          </div>
+
+          <div class="discovery-tile" data-toolkit-open="portfolio" style="cursor: pointer;">
+            <div>
+              <span class="tile-num">TOOLKIT 03</span>
+              <h3 class="tile-title">Portfolio Playbook</h3>
+              <p class="tile-desc">Build 2 real proof projects with zero prior work experience to win interviews.</p>
+            </div>
+            <div class="tile-footer"><span>OPEN PLAYBOOK →</span></div>
+          </div>
+
+          <div class="discovery-tile" data-toolkit-open="linkedin" style="cursor: pointer;">
+            <div>
+              <span class="tile-num">TOOLKIT 04</span>
+              <h3 class="tile-title">LinkedIn &amp; Network</h3>
+              <p class="tile-desc">Connect directly with hiring leads, share your learning journey, and get referrals.</p>
+            </div>
+            <div class="tile-footer"><span>OPEN PLAYBOOK →</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Recently Viewed -->
+    <section class="section-tight" id="home-recently-viewed-section" style="display: none;">
+      <div class="site-container">
+        <div class="section-header">
+          <span class="section-kicker">CONTINUE EXPLORING</span>
+          <h2 class="text-h2">Recently Viewed</h2>
+        </div>
+        <div id="home-recently-viewed-slot" class="opportunities-editorial-layout"></div>
+      </div>
+    </section>
+
+    <!-- 15. Saved CTA Banner -->
+    <section class="section">
+      <div class="site-container">
+        <div class="start-here-banner" style="background: linear-gradient(135deg, rgba(167,139,250,0.12) 0%, rgba(56,189,248,0.12) 100%);">
+          <div>
+            <span class="section-kicker">YOUR PROGRESS</span>
+            <h3 class="text-h2" style="font-size: 1.85rem;">Ready to track your personal pathway?</h3>
+            <p style="color: var(--text-secondary); margin-top: 6px;">
+              Review your saved listings, tick off document checklists, and monitor upcoming application deadlines.
+            </p>
+          </div>
+          <a href="saved.html" class="btn btn-primary">
+            <span>VIEW SAVED PATHWAY</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <span class="brand-name" style="font-size: 1.6rem;">ORBIT</span>
+          <p style="font-size: 14px; color: var(--text-secondary); margin: 12px 0; max-width: 300px;">
+            A South African youth career discovery platform. Map your move.
+          </p>
+          <div class="opp-meta-unboxed" style="font-size: 12px;">
+            <span>Cape Town</span>
+            <span class="opp-meta-sep">·</span>
+            <span>Johannesburg</span>
+            <span class="opp-meta-sep">·</span>
+            <span>Durban</span>
+            <span class="opp-meta-sep">·</span>
+            <span>National</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>EXPLORE</h4>
+          <ul class="footer-links">
+            <li><a href="discover.html">Possibility Map</a></li>
+            <li><a href="opportunities.html">All Opportunities</a></li>
+            <li><a href="resources.html">Career Signal Magazine</a></li>
+            <li><a href="saved.html">My Route Tracker</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CATEGORIES</h4>
+          <ul class="footer-links">
+            <li><a href="opportunities.html?category=Jobs">Entry-Level Jobs</a></li>
+            <li><a href="opportunities.html?category=Internships">Paid Internships</a></li>
+            <li><a href="opportunities.html?category=Learnerships">SETA Learnerships</a></li>
+            <li><a href="opportunities.html?category=Bursaries">Bursaries &amp; Grants</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONNECT &amp; TRUST</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Let's Connect</a></li>
+            <li><a href="resources.html#toolkit">Career Toolkit</a></li>
+            <li><a href="opportunity.html?id=ubu-001#safety">Scam Safety Advisory</a></li>
+            <li><span style="font-size: 13px; color: var(--accent-amber);">100% Free For Youth</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 ORBIT Platform · Created for South African youth career mobility. All listings are demo representations for portfolio &amp; exploration purposes.
+        </div>
+        <div class="opp-meta-unboxed" style="font-size: 12px;">
+          <span>ORBIT: Navigating Youth Trajectories</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Zero-Slop Architecture</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ask ORBIT Assistant Modal (Feature Y) -->
+  <div id="ask-orbit-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="ask-orbit-title">
+    <div class="modal-window">
+      <button id="ask-orbit-close" class="modal-close-btn" aria-label="Close assistant">✕</button>
+      <span class="section-kicker">RULE-BASED CAREER DISCOVERY</span>
+      <h3 id="ask-orbit-title" class="text-h3" style="margin-bottom: 8px;">Ask ORBIT</h3>
+      <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">
+        Describe what you're seeking in plain words. (e.g. <em>"Recent IT graduate looking for internship in Cape Town"</em> or <em>"Learnership for matriculant"</em>).
+      </p>
+
+      <form id="ask-orbit-form">
+        <div class="search-input-wrapper">
+          <input type="text" id="ask-orbit-input" class="search-input" placeholder="Type your situation or question..." />
+          <button type="submit" class="btn btn-primary btn-sm">FIND</button>
+        </div>
+      </form>
+
+      <div id="ask-orbit-response"></div>
+    </div>
+  </div>
+
+  <!-- Career Toolkit Dialog Modal (Feature V) -->
+  <div id="toolkit-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="toolkit-modal-title">
+    <div class="modal-window">
+      <button id="toolkit-modal-close" class="modal-close-btn" aria-label="Close checklist">✕</button>
+      <span class="section-kicker">CAREER TOOLKIT</span>
+      <h3 id="toolkit-modal-title" class="text-h3" style="margin-bottom: 12px;">Toolkit</h3>
+      <div id="toolkit-modal-content"></div>
+      <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end;">
+        <button class="btn btn-secondary btn-sm" onclick="document.getElementById('toolkit-modal').classList.remove('open')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { fetchOpportunities, getTodaysPossibility, getClosingSoonOpportunities, getTrendingSkills, getCityStats } from '/js/data.js';
+    import { renderOpportunityCard, renderFeaturedOpportunity, renderDiscoveryTiles, attachBookmarkListeners } from '/js/render.js';
+    import { filterOpportunities, initSearchPlaceholderRotator } from '/js/filters.js';
+    import { getRecentlyViewedIds } from '/js/storage.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      // 1. Render Discovery Tiles
+      const tilesContainer = document.getElementById('discovery-tiles-container');
+      if (tilesContainer) {
+        tilesContainer.innerHTML = renderDiscoveryTiles();
+      }
+
+      // 2. Render Today's Possibility
+      const todaySlot = document.getElementById('todays-possibility-slot');
+      const todaysOpp = await getTodaysPossibility();
+      if (todaySlot && todaysOpp) {
+        todaySlot.innerHTML = renderFeaturedOpportunity(todaysOpp);
+        attachBookmarkListeners(todaySlot);
+      }
+
+      // 3. Render Featured Roster (4 top opportunities)
+      const all = await fetchOpportunities();
+      const rosterSlot = document.getElementById('featured-roster-slot');
+      if (rosterSlot) {
+        rosterSlot.innerHTML = all.slice(0, 4).map(renderOpportunityCard).join('');
+        attachBookmarkListeners(rosterSlot);
+      }
+
+      // 4. Render Closing Soon
+      const closingSoon = await getClosingSoonOpportunities(3);
+      const closingSlot = document.getElementById('closing-soon-slot');
+      if (closingSlot) {
+        closingSlot.innerHTML = closingSoon.map(renderOpportunityCard).join('');
+        attachBookmarkListeners(closingSlot);
+      }
+
+      // 5. Setup Homepage Search Engine
+      const searchInput = document.getElementById('home-search-input');
+      const catSelect = document.getElementById('home-category-select');
+      const provSelect = document.getElementById('home-province-select');
+      const expSelect = document.getElementById('home-experience-select');
+      const searchResults = document.getElementById('home-search-results');
+      const announcer = document.getElementById('home-search-announcer');
+
+      initSearchPlaceholderRotator(searchInput);
+
+      function updateHomeSearch() {
+        if (!searchInput) return;
+        const kw = searchInput.value;
+        const cat = catSelect ? catSelect.value : 'all';
+        const prov = provSelect ? provSelect.value : 'all';
+        const exp = expSelect ? expSelect.value : 'all';
+
+        // Update Discover button link
+        const discoverBtn = document.getElementById('home-discover-btn');
+        if (discoverBtn) {
+          discoverBtn.href = `opportunities.html?q=${encodeURIComponent(kw)}&category=${encodeURIComponent(cat)}&province=${encodeURIComponent(prov)}&experience=${encodeURIComponent(exp)}`;
+        }
+
+        if (!kw.trim() && cat === 'all' && prov === 'all' && exp === 'all') {
+          if (searchResults) searchResults.innerHTML = '';
+          return;
+        }
+
+        const filtered = filterOpportunities(all, {
+          keyword: kw,
+          category: cat,
+          province: prov,
+          experience: exp
+        });
+
+        if (announcer) {
+          announcer.textContent = `${filtered.length} possibilities found`;
+        }
+
+        if (searchResults) {
+          if (filtered.length === 0) {
+            searchResults.innerHTML = '<p style="padding: 24px; text-align: center; color: var(--text-muted);">No opportunities match this exact search query. Try broadening your terms.</p>';
+          } else {
+            searchResults.innerHTML = filtered.slice(0, 4).map(renderOpportunityCard).join('');
+            attachBookmarkListeners(searchResults);
+          }
+        }
+      }
+
+      if (searchInput) searchInput.addEventListener('input', updateHomeSearch);
+      if (catSelect) catSelect.addEventListener('change', updateHomeSearch);
+      if (provSelect) provSelect.addEventListener('change', updateHomeSearch);
+      if (expSelect) expSelect.addEventListener('change', updateHomeSearch);
+
+      // 6. Trending Skills
+      const skillsContainer = document.getElementById('trending-skills-container');
+      const trending = await getTrendingSkills();
+      if (skillsContainer) {
+        skillsContainer.innerHTML = trending.map(item => `
+          <a href="opportunities.html?skill=${encodeURIComponent(item.name)}" class="segmented-pill-btn">
+            ${item.name} (${item.count})
+          </a>
+        `).join('');
+      }
+
+      // 7. "From My City" Logic
+      const cityBreakdown = document.getElementById('city-breakdown-display');
+      const cityOppsList = document.getElementById('city-opportunities-list');
+      const cityTabs = document.querySelectorAll('.city-tab-btn');
+
+      async function updateCityLandscape(citySlug, cityName) {
+        const stats = await getCityStats(citySlug);
+        if (cityBreakdown) {
+          cityBreakdown.innerHTML = `
+            <div class="city-stat-breakdown-row">
+              <span style="font-weight: 700; color: var(--text-primary); text-transform: uppercase;">${cityName} LANDSCAPE:</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.jobs}</span> jobs</span>
+              <span aria-hidden="true">·</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.internships}</span> internships</span>
+              <span aria-hidden="true">·</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.learnerships}</span> learnerships</span>
+              <span aria-hidden="true">·</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.bursaries}</span> bursaries</span>
+              <span aria-hidden="true">·</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.courses}</span> courses</span>
+              <span aria-hidden="true">·</span>
+              <span class="city-stat-item"><span class="city-stat-count">${stats.events}</span> events</span>
+            </div>
+          `;
+        }
+
+        const cityMatches = all.filter(o => o.citySlug === citySlug);
+        if (cityOppsList) {
+          if (cityMatches.length > 0) {
+            cityOppsList.innerHTML = cityMatches.slice(0, 3).map(renderOpportunityCard).join('');
+            attachBookmarkListeners(cityOppsList);
+          } else {
+            cityOppsList.innerHTML = `<p style="padding: 24px; color: var(--text-muted);">No localized opportunities for ${cityName} currently active.</p>`;
+          }
+        }
+      }
+
+      cityTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          cityTabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const slug = tab.getAttribute('data-city');
+          const name = tab.textContent;
+          updateCityLandscape(slug, name);
+        });
+      });
+
+      // Init first city: Cape Town
+      updateCityLandscape('cape-town', 'Cape Town');
+
+      // 8. Recently Viewed on Home
+      const recentIds = getRecentlyViewedIds();
+      if (recentIds.length > 0) {
+        const recentSec = document.getElementById('home-recently-viewed-section');
+        const recentSlot = document.getElementById('home-recently-viewed-slot');
+        if (recentSec && recentSlot) {
+          const recentItems = all.filter(o => recentIds.includes(o.id));
+          if (recentItems.length > 0) {
+            recentSec.style.display = 'block';
+            recentSlot.innerHTML = recentItems.map(renderOpportunityCard).join('');
+            attachBookmarkListeners(recentSlot);
+          }
+        }
+      }
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

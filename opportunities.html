@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opportunities Catalogue — ORBIT</title>
+  <meta name="description" content="Discover entry-level jobs, paid internships, SETA learnerships, STEM bursaries, and subsidised courses across South Africa." />
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Safety Banner -->
+  <aside class="global-safety-banner" aria-label="Official Scam Awareness Advisory">
+    <div class="site-container safety-banner-inner">
+      <span class="safety-pill-text">⚠️ SCAM ALERT:</span>
+      <span>Never pay application or interview fees · Legitimate South African employers &amp; SETAs never charge candidates.</span>
+    </div>
+  </aside>
+
+  <!-- Top Navigation -->
+  <header class="site-header" role="banner">
+    <div class="site-container nav-wrapper">
+      <a href="index.html" class="brand-mark" aria-label="ORBIT Home">
+        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="18" r="6" fill="var(--color-teal)"/>
+          <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
+          <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
+          <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">ORBIT</span>
+        <span class="brand-tagline-hint">/ MAP</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="opportunities.html" class="nav-link active">Opportunities</a>
+        <a href="resources.html" class="nav-link">Resources</a>
+        <a href="saved.html" class="nav-link">Saved</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="ask-orbit-trigger" class="nav-icon-btn" title="Ask ORBIT Assistant" aria-label="Ask ORBIT Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+
+        <a href="saved.html" class="saved-link-btn" aria-label="Saved Opportunities">
+          <span>Saved</span>
+          <span class="saved-count-bubble" style="display: none;">0</span>
+        </a>
+
+        <button class="theme-toggle-btn" aria-label="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-name">ORBIT</span>
+      <button class="mobile-drawer-close nav-icon-btn" aria-label="Close mobile navigation">✕</button>
+    </div>
+    <ul class="mobile-drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover &amp; Map</a></li>
+      <li><a href="opportunities.html">All Opportunities</a></li>
+      <li><a href="resources.html">Resources &amp; Toolkit</a></li>
+      <li><a href="saved.html">My Saved Opportunities</a></li>
+      <li><a href="contact.html">Contact &amp; Connect</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content" class="section">
+    <div class="site-container">
+      <div class="section-header">
+        <span class="section-kicker">CURATED REPOSITORY</span>
+        <h1 class="text-display" style="font-size: clamp(2rem, 3.8vw, 3.2rem);">
+          Opportunities For South African Youth
+        </h1>
+        <p class="text-lead" style="margin-top: 8px;">
+          Filter by your situation, province, or preferred category. Every listing is audited for legitimacy.
+        </p>
+      </div>
+
+      <!-- Feature G: "Opportunities For My Situation" Switcher -->
+      <div class="situation-filter-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <span class="section-kicker">FEATURE: FOR MY SITUATION</span>
+            <strong style="font-size: 15px; color: var(--text-primary); display: block;">I am currently:</strong>
+          </div>
+          <button id="clear-situation-btn" class="btn btn-secondary btn-sm" style="display: none;">Show All Situations</button>
+        </div>
+
+        <div class="situation-buttons-wrap" id="situation-buttons-container">
+          <button class="situation-btn" data-situation="A Matric learner">A Matric learner</button>
+          <button class="situation-btn" data-situation="A TVET student">A TVET student</button>
+          <button class="situation-btn" data-situation="A university student">A university student</button>
+          <button class="situation-btn" data-situation="A graduate">A graduate</button>
+          <button class="situation-btn" data-situation="Unemployed">Unemployed</button>
+          <button class="situation-btn" data-situation="Changing careers">Changing careers</button>
+          <button class="situation-btn" data-situation="Looking for experience">Looking for experience</button>
+          <button class="situation-btn" data-situation="Starting a business">Starting a business</button>
+        </div>
+      </div>
+
+      <!-- Search Engine & Multi-Filter Controls -->
+      <div class="search-engine-box">
+        <div class="search-input-wrapper">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="opps-search-input" class="search-input" placeholder="Search 'Cape Town junior developer'..." aria-label="Search opportunities" />
+        </div>
+
+        <!-- Category Segmented Control Pills -->
+        <div class="segmented-pills-bar" id="category-pills-container" style="margin-bottom: 16px;">
+          <button class="segmented-pill-btn active" data-category="all">All Categories</button>
+          <button class="segmented-pill-btn" data-category="Jobs">Jobs</button>
+          <button class="segmented-pill-btn" data-category="Internships">Internships</button>
+          <button class="segmented-pill-btn" data-category="Learnerships">Learnerships</button>
+          <button class="segmented-pill-btn" data-category="Bursaries">Bursaries</button>
+          <button class="segmented-pill-btn" data-category="Courses">Courses</button>
+          <button class="segmented-pill-btn" data-category="Events">Events</button>
+        </div>
+
+        <div class="filters-row">
+          <select id="opps-province-select" class="filter-select" aria-label="Filter by province">
+            <option value="all">All Provinces</option>
+            <option value="Western Cape">Western Cape</option>
+            <option value="Gauteng">Gauteng</option>
+            <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+            <option value="Eastern Cape">Eastern Cape</option>
+            <option value="Free State">Free State</option>
+            <option value="Limpopo">Limpopo</option>
+            <option value="Mpumalanga">Mpumalanga</option>
+            <option value="Northern Cape">Northern Cape</option>
+            <option value="National / Remote">National / Remote</option>
+          </select>
+
+          <select id="opps-experience-select" class="filter-select" aria-label="Filter by experience level">
+            <option value="all">All Experience Levels</option>
+            <option value="No Experience Required">No Experience Required</option>
+            <option value="Student / Matric">Student / Matric</option>
+            <option value="Entry Level">Entry Level</option>
+            <option value="Graduate">Graduate</option>
+            <option value="1-2 Years">1-2 Years</option>
+          </select>
+
+          <select id="opps-closing-select" class="filter-select" aria-label="Filter by closing window">
+            <option value="all">Any Closing Date</option>
+            <option value="7">Closing within 7 days</option>
+            <option value="14">Closing within 14 days</option>
+            <option value="30">Closing within 30 days</option>
+          </select>
+
+          <button id="reset-filters-btn" class="btn btn-secondary btn-sm" style="margin-left: auto;">
+            <span>Reset Filters</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Search Announcer for Screen Readers -->
+      <div id="opps-count-announcer" class="sr-only" aria-live="polite"></div>
+
+      <!-- Opportunity Results List -->
+      <div id="opps-results-container" class="opportunities-editorial-layout">
+        <!-- Rendered via renderFilteredList() -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-container">
+      <div class="footer-bottom">
+        <div>© 2026 ORBIT · Built for South African Youth Career Mobility.</div>
+        <div class="opp-meta-unboxed">
+          <span>All listings verified</span>
+          <span class="opp-meta-sep">·</span>
+          <span>Zero Scam Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module">
+    import { fetchOpportunities } from '/js/data.js';
+    import { filterOpportunities, parseUrlFilters, initSearchPlaceholderRotator, renderFilteredList } from '/js/filters.js';
+    import { renderSkeletons } from '/js/render.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      const container = document.getElementById('opps-results-container');
+      const announcer = document.getElementById('opps-count-announcer');
+      const searchInput = document.getElementById('opps-search-input');
+      const provSelect = document.getElementById('opps-province-select');
+      const expSelect = document.getElementById('opps-experience-select');
+      const closingSelect = document.getElementById('opps-closing-select');
+      const catPills = document.querySelectorAll('#category-pills-container .segmented-pill-btn');
+      const situationBtns = document.querySelectorAll('#situation-buttons-container .situation-btn');
+      const clearSitBtn = document.getElementById('clear-situation-btn');
+      const resetBtn = document.getElementById('reset-filters-btn');
+
+      // Initial loading skeleton
+      if (container) {
+        container.innerHTML = renderSkeletons(4);
+      }
+
+      initSearchPlaceholderRotator(searchInput);
+
+      const all = await fetchOpportunities();
+
+      // Read URL filters
+      const urlFilters = parseUrlFilters();
+      let state = {
+        keyword: urlFilters.keyword || '',
+        category: urlFilters.category || 'all',
+        province: urlFilters.province || 'all',
+        experience: urlFilters.experience || 'all',
+        situation: urlFilters.situation || 'all',
+        skill: urlFilters.skill || 'all',
+        citySlug: urlFilters.citySlug || 'all',
+        closingWithin: urlFilters.closingWithin || 'all'
+      };
+
+      // Sync UI elements with initial state
+      if (searchInput && state.keyword) searchInput.value = state.keyword;
+      if (provSelect && state.province) provSelect.value = state.province;
+      if (expSelect && state.experience) expSelect.value = state.experience;
+      if (closingSelect && state.closingWithin) closingSelect.value = state.closingWithin;
+
+      catPills.forEach(pill => {
+        const cat = pill.getAttribute('data-category');
+        if (cat.toLowerCase() === state.category.toLowerCase()) {
+          catPills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+        }
+      });
+
+      if (state.situation !== 'all') {
+        situationBtns.forEach(btn => {
+          if (btn.getAttribute('data-situation') === state.situation) {
+            btn.classList.add('active');
+            if (clearSitBtn) clearSitBtn.style.display = 'inline-block';
+          }
+        });
+      }
+
+      function applyAndRender() {
+        const results = filterOpportunities(all, state);
+        renderFilteredList(results, container, announcer);
+      }
+
+      applyAndRender();
+
+      // Event Listeners
+      if (searchInput) {
+        searchInput.addEventListener('input', () => {
+          state.keyword = searchInput.value;
+          applyAndRender();
+        });
+      }
+
+      if (provSelect) {
+        provSelect.addEventListener('change', () => {
+          state.province = provSelect.value;
+          applyAndRender();
+        });
+      }
+
+      if (expSelect) {
+        expSelect.addEventListener('change', () => {
+          state.experience = expSelect.value;
+          applyAndRender();
+        });
+      }
+
+      if (closingSelect) {
+        closingSelect.addEventListener('change', () => {
+          state.closingWithin = closingSelect.value;
+          applyAndRender();
+        });
+      }
+
+      catPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          catPills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          state.category = pill.getAttribute('data-category');
+          applyAndRender();
+        });
+      });
+
+      situationBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const sit = btn.getAttribute('data-situation');
+          if (state.situation === sit) {
+            // Deselect
+            btn.classList.remove('active');
+            state.situation = 'all';
+            if (clearSitBtn) clearSitBtn.style.display = 'none';
+          } else {
+            situationBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            state.situation = sit;
+            if (clearSitBtn) clearSitBtn.style.display = 'inline-block';
+          }
+          applyAndRender();
+        });
+      });
+
+      if (clearSitBtn) {
+        clearSitBtn.addEventListener('click', () => {
+          situationBtns.forEach(b => b.classList.remove('active'));
+          state.situation = 'all';
+          clearSitBtn.style.display = 'none';
+          applyAndRender();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          state = {
+            keyword: '',
+            category: 'all',
+            province: 'all',
+            experience: 'all',
+            situation: 'all',
+            skill: 'all',
+            citySlug: 'all',
+            closingWithin: 'all'
+          };
+          if (searchInput) searchInput.value = '';
+          if (provSelect) provSelect.value = 'all';
+          if (expSelect) expSelect.value = 'all';
+          if (closingSelect) closingSelect.value = 'all';
+          catPills.forEach(p => p.classList.toggle('active', p.getAttribute('data-category') === 'all'));
+          situationBtns.forEach(b => b.classList.remove('active'));
+          if (clearSitBtn) clearSitBtn.style.display = 'none';
+          applyAndRender();
+        });
+      }
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
