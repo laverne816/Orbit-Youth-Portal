@@ -1,7 +1,3 @@
-# ORBIT
-
-> *"Map your move."*  
-
 **ORBIT** is a futurist digital career-discovery platform designed specifically for South African youth.
 
 <img width="1345" height="582" alt="Orbit Youth Portal Screenshot 1" src="https://github.com/user-attachments/assets/4ea428c5-8601-4978-acc0-3f23046790e0" />
