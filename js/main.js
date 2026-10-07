@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAuthAndProfile();
   initAskOrbitAssistant();
   initCareerToolkitModals();
+  initFuturisticEnhancements();
 });
 
 /**
@@ -898,4 +899,395 @@ function escapeHtml(str) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
+}
+
+/**
+ * Futuristic Interactive Systems
+ */
+function initFuturisticEnhancements() {
+  initScrollProgressBar();
+  initCyberCursor();
+  initHeroParticles();
+  initScrollReveal();
+  initStatCounters();
+  initDigitalOpportunityMap();
+  initButtonRipples();
+  initStickyHeaderScroll();
+}
+
+/**
+ * Top Scroll Progress Indicator
+ */
+function initScrollProgressBar() {
+  let bar = document.getElementById('scroll-progress-bar');
+  if (!bar) {
+    bar = document.createElement('div');
+    bar.id = 'scroll-progress-bar';
+    document.body.appendChild(bar);
+  }
+
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (totalHeight > 0) {
+      const progress = (window.scrollY / totalHeight) * 100;
+      bar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+    }
+  }, { passive: true });
+}
+
+/**
+ * Compact floating header on scroll
+ */
+function initStickyHeaderScroll() {
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }, { passive: true });
+}
+
+/**
+ * Custom Desktop Cyber Cursor Follower & Contextual Badges
+ */
+function initCyberCursor() {
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  let dot = document.querySelector('.cyber-cursor-dot');
+  let ring = document.querySelector('.cyber-cursor-ring');
+  let label = document.querySelector('.cyber-cursor-label');
+
+  if (!dot) {
+    dot = document.createElement('div');
+    dot.className = 'cyber-cursor-dot';
+    document.body.appendChild(dot);
+  }
+  if (!ring) {
+    ring = document.createElement('div');
+    ring.className = 'cyber-cursor-ring';
+    document.body.appendChild(ring);
+  }
+  if (!label) {
+    label = document.createElement('div');
+    label.className = 'cyber-cursor-label';
+    document.body.appendChild(label);
+  }
+
+  let mouseX = -100, mouseY = -100;
+  let ringX = -100, ringY = -100;
+
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+    label.style.transform = `translate(${mouseX + 16}px, ${mouseY + 16}px)`;
+  }, { passive: true });
+
+  function renderCursor() {
+    ringX += (mouseX - ringX) * 0.22;
+    ringY += (mouseY - ringY) * 0.22;
+    ring.style.transform = `translate(${ringX - 16}px, ${ringY - 16}px)`;
+    requestAnimationFrame(renderCursor);
+  }
+  requestAnimationFrame(renderCursor);
+
+  document.addEventListener('mouseover', (e) => {
+    const target = e.target.closest('a, button, .opp-card, .next-move-card, .discovery-tile, .sa-node-group, input, select');
+    if (target) {
+      ring.classList.add('active-hover');
+      
+      let text = '';
+      if (target.closest('.opp-card')) text = 'EXPLORE';
+      else if (target.closest('.next-move-card')) text = 'PATHWAY';
+      else if (target.closest('.sa-node-group')) text = 'NETWORK';
+      else if (target.closest('.bookmark-toggle-btn')) text = 'SAVE';
+      else if (target.matches('.btn-primary') || target.closest('.btn-primary')) text = 'LAUNCH';
+      else if (target.closest('.discovery-tile')) text = 'VIEW';
+      else if (target.tagName === 'A' || target.tagName === 'BUTTON') text = 'SELECT';
+
+      if (text) {
+        label.textContent = text;
+        label.classList.add('show');
+      }
+    } else {
+      ring.classList.remove('active-hover');
+      label.classList.remove('show');
+    }
+  });
+}
+
+/**
+ * Ambient Hero Canvas Particles
+ */
+function initHeroParticles() {
+  const canvas = document.getElementById('hero-particles-canvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  let width = (canvas.width = canvas.parentElement.offsetWidth);
+  let height = (canvas.height = canvas.parentElement.offsetHeight);
+
+  window.addEventListener('resize', () => {
+    if (!canvas.parentElement) return;
+    width = canvas.width = canvas.parentElement.offsetWidth;
+    height = canvas.height = canvas.parentElement.offsetHeight;
+  }, { passive: true });
+
+  const particleCount = Math.min(42, Math.floor(width / 30));
+  const particles = [];
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.45,
+      vy: (Math.random() - 0.5) * 0.45,
+      radius: Math.random() * 1.8 + 0.8,
+      color: Math.random() > 0.4 ? 'rgba(0, 229, 255, ' : 'rgba(0, 102, 255, ',
+      alpha: Math.random() * 0.5 + 0.25
+    });
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    // Draw connecting lines
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 100) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(0, 229, 255, ${0.18 * (1 - dist / 100)})`;
+          ctx.lineWidth = 0.8;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    // Draw particles
+    for (const p of particles) {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0) p.x = width;
+      if (p.x > width) p.x = 0;
+      if (p.y < 0) p.y = height;
+      if (p.y > height) p.y = 0;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `${p.color}${p.alpha})`;
+      ctx.fill();
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+}
+
+/**
+ * Scroll Reveal Animations (Blur to sharp, slide up)
+ */
+function initScrollReveal() {
+  const elements = document.querySelectorAll('.reveal-on-scroll');
+  if (elements.length === 0) return;
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -30px 0px'
+  });
+
+  elements.forEach(el => observer.observe(el));
+}
+
+/**
+ * Animated System Data Counters
+ */
+function initStatCounters() {
+  const statSection = document.querySelector('.telemetry-stats-bar');
+  if (!statSection) return;
+
+  let animated = false;
+  const observer = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting && !animated) {
+      animated = true;
+      animateAllCounters();
+    }
+  }, { threshold: 0.2 });
+
+  observer.observe(statSection);
+
+  function animateAllCounters() {
+    const counters = statSection.querySelectorAll('[data-counter-target]');
+    counters.forEach(counter => {
+      const target = parseFloat(counter.getAttribute('data-counter-target'));
+      const decimals = parseInt(counter.getAttribute('data-counter-decimals') || '0', 10);
+      const prefix = counter.getAttribute('data-counter-prefix') || '';
+      const suffix = counter.getAttribute('data-counter-suffix') || '';
+
+      const duration = 1800;
+      const startTime = performance.now();
+
+      function update(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+        const current = target * ease;
+
+        if (decimals > 0) {
+          counter.textContent = `${prefix}${current.toFixed(decimals)}${suffix}`;
+        } else {
+          counter.textContent = `${prefix}${Math.floor(current).toLocaleString()}${suffix}`;
+        }
+
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          if (decimals > 0) {
+            counter.textContent = `${prefix}${target.toFixed(decimals)}${suffix}`;
+          } else {
+            counter.textContent = `${prefix}${target.toLocaleString()}${suffix}`;
+          }
+        }
+      }
+
+      requestAnimationFrame(update);
+    });
+  }
+}
+
+/**
+ * Digital Opportunity Map (SA Ecosystem Network)
+ */
+function initDigitalOpportunityMap() {
+  const nodes = document.querySelectorAll('.sa-node-group');
+  const cityTitle = document.getElementById('network-telemetry-city');
+  const totalCount = document.getElementById('network-telemetry-count');
+  const sectors = document.getElementById('network-telemetry-sectors');
+  const stipend = document.getElementById('network-telemetry-stipend');
+  const filterBtn = document.getElementById('network-telemetry-filter-btn');
+
+  const cityData = {
+    'cape-town': {
+      name: 'Cape Town',
+      province: 'Western Cape',
+      count: '124 Active Opportunities',
+      sectors: 'Software & Cloud, Creative Tech, Clean Energy',
+      stipend: 'R8,500 – R24,000 / month',
+      url: 'opportunities.html?province=Western%20Cape'
+    },
+    'johannesburg': {
+      name: 'Johannesburg',
+      province: 'Gauteng',
+      count: '186 Active Opportunities',
+      sectors: 'FinTech, Enterprise Engineering, Data Analytics',
+      stipend: 'R9,200 – R26,500 / month',
+      url: 'opportunities.html?province=Gauteng'
+    },
+    'durban': {
+      name: 'Durban',
+      province: 'KwaZulu-Natal',
+      count: '92 Active Opportunities',
+      sectors: 'Logistics Tech, Manufacturing, Digital Commerce',
+      stipend: 'R7,800 – R19,500 / month',
+      url: 'opportunities.html?province=KwaZulu-Natal'
+    },
+    'gqeberha': {
+      name: 'Gqeberha',
+      province: 'Eastern Cape',
+      count: '48 Active Opportunities',
+      sectors: 'Automotive Embedded Systems, Renewable Tech',
+      stipend: 'R7,200 – R18,000 / month',
+      url: 'opportunities.html?province=Eastern%20Cape'
+    },
+    'pretoria': {
+      name: 'Pretoria',
+      province: 'Gauteng',
+      count: '115 Active Opportunities',
+      sectors: 'Cybersecurity, Public Tech, Research Science',
+      stipend: 'R8,600 – R22,000 / month',
+      url: 'opportunities.html?province=Gauteng'
+    },
+    'bloemfontein': {
+      name: 'Bloemfontein',
+      province: 'Free State',
+      count: '37 Active Opportunities',
+      sectors: 'AgriTech, Health Systems, Network Support',
+      stipend: 'R6,800 – R16,500 / month',
+      url: 'opportunities.html?province=Free%20State'
+    }
+  };
+
+  function selectCity(cityKey) {
+    const data = cityData[cityKey];
+    if (!data) return;
+
+    nodes.forEach(n => {
+      if (n.getAttribute('data-city-node') === cityKey) {
+        n.classList.add('active');
+      } else {
+        n.classList.remove('active');
+      }
+    });
+
+    if (cityTitle) cityTitle.textContent = `${data.name} (${data.province})`;
+    if (totalCount) totalCount.textContent = data.count;
+    if (sectors) sectors.textContent = data.sectors;
+    if (stipend) stipend.textContent = data.stipend;
+    if (filterBtn) filterBtn.href = data.url;
+  }
+
+  nodes.forEach(node => {
+    node.addEventListener('click', () => {
+      const cityKey = node.getAttribute('data-city-node');
+      selectCity(cityKey);
+    });
+  });
+
+  selectCity('johannesburg');
+}
+
+/**
+ * Energy Button Ripple Micro-interaction
+ */
+function initButtonRipples() {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn');
+    if (!btn) return;
+
+    const rect = btn.getBoundingClientRect();
+    const ripple = document.createElement('span');
+    ripple.style.position = 'absolute';
+    ripple.style.borderRadius = '50%';
+    ripple.style.background = 'rgba(0, 229, 255, 0.45)';
+    ripple.style.width = ripple.style.height = `${Math.max(rect.width, rect.height) * 2}px`;
+    ripple.style.left = `${e.clientX - rect.left - Math.max(rect.width, rect.height)}px`;
+    ripple.style.top = `${e.clientY - rect.top - Math.max(rect.width, rect.height)}px`;
+    ripple.style.pointerEvents = 'none';
+    ripple.style.transform = 'scale(0)';
+    ripple.style.animation = 'ripple-effect 0.55s ease-out';
+    ripple.style.zIndex = '10';
+
+    btn.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 550);
+  });
 }

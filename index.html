@@ -13,15 +13,63 @@
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
+  <!-- Global Scroll Progress Bar -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
   <!-- Keyboard accessibility skip link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Global Scam Awareness Banner -->
-  <aside class="global-safety-banner" aria-label="Official Scam Awareness Advisory">
-    <div class="site-container safety-banner-inner">
-      <span class="safety-pill-text">⚠️ SCAM ALERT:</span>
-      <span>Never pay application or interview fees · Legitimate South African employers &amp; SETAs never charge candidates.</span>
-      <a href="opportunity.html?id=ubu-001#safety" style="color: var(--accent-amber); text-decoration: underline; font-weight: 600;">Learn Safety Rules</a>
+  <!-- Futuristic Live Opportunity Alert Bar (Live Moving Information Ticker) -->
+  <aside class="global-safety-banner" aria-label="Live Opportunities Feed">
+    <div class="safety-banner-inner">
+      <div class="live-beacon-wrap">
+        <span class="live-beacon-dot"></span>
+        <span>● LIVE FEED</span>
+      </div>
+      <div class="live-ticker-track" aria-hidden="true">
+        <div class="live-ticker-content">
+          <span class="live-ticker-item"><strong>124 INTERNSHIPS AVAILABLE</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">REMOTE ROLES</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item"><strong>GRADUATE PROGRAMMES 2026</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">SETA LEARNERSHIPS OPEN</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item"><strong>NEW OPPORTUNITIES ADDED</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">CAPE TOWN TECH HUBS</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">JOHANNESBURG FINTECH</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">DURBAN INNOVATION CORRIDOR</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">R15,000 STEM BURSARIES OPEN</span>
+          <span class="live-ticker-sep">✦</span>
+          <!-- Duplicate set for seamless continuous marquee loop -->
+          <span class="live-ticker-item"><strong>124 INTERNSHIPS AVAILABLE</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">REMOTE ROLES</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item"><strong>GRADUATE PROGRAMMES 2026</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">SETA LEARNERSHIPS OPEN</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item"><strong>NEW OPPORTUNITIES ADDED</strong></span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">CAPE TOWN TECH HUBS</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">JOHANNESBURG FINTECH</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">DURBAN INNOVATION CORRIDOR</span>
+          <span class="live-ticker-sep">✦</span>
+          <span class="live-ticker-item">R15,000 STEM BURSARIES OPEN</span>
+          <span class="live-ticker-sep">✦</span>
+        </div>
+      </div>
+      <a href="opportunity.html?id=ubu-001#safety" class="live-safety-link" title="Official Candidate Safety Pledge">
+        <span>🛡️ 100% Free Candidate Protection</span>
+      </a>
     </div>
   </aside>
 
@@ -35,7 +83,7 @@
           <circle cx="18" cy="44" r="6" fill="var(--color-mint)"/>
           <circle cx="46" cy="44" r="6" fill="var(--color-teal)"/>
           <circle cx="32" cy="34" r="4" fill="var(--color-deep-teal)"/>
-          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-teal)" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M32 18 L32 34 M32 34 L18 44 M32 34 L46 44" stroke="var(--color-cyber-cyan)" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
         <span class="brand-name">ORBIT</span>
         <span class="brand-tagline-hint">/ MAP</span>
@@ -107,10 +155,32 @@
   <main id="main-content">
     <!-- 2. Futuristic Hero Section -->
     <section class="hero-section">
-      <div class="site-container hero-grid">
+      <!-- Ambient Futuristic Canvas & Light Effects -->
+      <canvas id="hero-particles-canvas" class="hero-particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="hero-cyber-line-h" aria-hidden="true"></div>
+
+      <!-- Floating Micro-Elements: Subtle Moving Words -->
+      <div class="hero-floating-words" aria-hidden="true">
+        <span class="hero-micro-tag tag-1">OPPORTUNITY</span>
+        <span class="hero-micro-tag tag-2">SKILLS</span>
+        <span class="hero-micro-tag tag-3">CAREERS</span>
+        <span class="hero-micro-tag tag-4">INTERNSHIPS</span>
+        <span class="hero-micro-tag tag-5">FUTURE</span>
+        <span class="hero-micro-tag tag-6">CONNECT</span>
+        <span class="hero-micro-tag tag-7">GROW</span>
+      </div>
+
+      <div class="site-container hero-grid" style="position: relative; z-index: 3;">
         <div class="hero-content">
+          <!-- Signature Visual Element: Opportunity Pulse -->
           <div class="floating-signal-badge">
-            <span class="signal-dot"></span>
+            <span class="opp-pulse" aria-hidden="true">
+              <span class="opp-pulse-ring"></span>
+              <span class="opp-pulse-core"></span>
+              <span class="opp-pulse-ray"></span>
+            </span>
             <span id="hero-live-signal">26 POSSIBILITIES ACTIVE · 8 CLOSING THIS MONTH</span>
           </div>
 
@@ -124,6 +194,7 @@
 
           <div class="hero-actions">
             <a href="discover.html" class="btn btn-primary btn-lg">
+              <span class="btn-energy-spark">✦</span>
               <span>START WHERE YOU ARE</span>
               <span aria-hidden="true">→</span>
             </a>
@@ -142,8 +213,52 @@
           </div>
         </div>
 
-        <div class="hero-visual">
+        <div class="hero-visual electric-edge">
           <img src="/assets/images/hero.svg" alt="Abstract visualization of branching career pathways across South Africa" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 2B. Futuristic Live System Data Statistics -->
+    <section class="section-tight" aria-label="System Telemetry & Live Statistics">
+      <div class="site-container">
+        <div class="telemetry-stats-bar electric-edge reveal-on-scroll">
+          <div class="telemetry-meta-header">
+            <div class="system-active-badge">
+              <span class="active-dot-beacon"></span>
+              <span>● SYSTEM ACTIVE · 2026 LIVE CYCLE</span>
+            </div>
+            <div class="opp-meta-unboxed" style="font-family: var(--font-mono); font-size: 11px;">
+              <span>SIGNAL: OPTIMAL</span>
+              <span class="opp-meta-sep">·</span>
+              <span>9 PROVINCES SYNCED</span>
+              <span class="opp-meta-sep">·</span>
+              <span>REFRESH: 60s</span>
+            </div>
+          </div>
+
+          <div class="telemetry-stats-grid">
+            <div class="stat-counter-box">
+              <div class="stat-counter-num" data-counter-target="10482">0</div>
+              <div class="stat-counter-label">OPPORTUNITIES INDEX</div>
+              <div class="stat-counter-sub">Across 9 provinces</div>
+            </div>
+            <div class="stat-counter-box">
+              <div class="stat-counter-num" data-counter-target="580" data-counter-suffix="+">0</div>
+              <div class="stat-counter-label">ACTIVE EMPLOYERS &amp; SETAS</div>
+              <div class="stat-counter-sub">Verified enterprise hosts</div>
+            </div>
+            <div class="stat-counter-box">
+              <div class="stat-counter-num" data-counter-target="24500" data-counter-suffix="+">0</div>
+              <div class="stat-counter-label">YOUTH CONNECTED</div>
+              <div class="stat-counter-sub">Actively exploring routes</div>
+            </div>
+            <div class="stat-counter-box">
+              <div class="stat-counter-num" data-counter-target="94.2" data-counter-decimals="1" data-counter-suffix="%">0</div>
+              <div class="stat-counter-label">VERIFIED ACCREDITATION</div>
+              <div class="stat-counter-sub">Zero-scam verified</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -151,7 +266,7 @@
     <!-- 3. "Start Where You Are" Entry Card -->
     <section class="section-tight">
       <div class="site-container">
-        <div class="start-here-banner">
+        <div class="start-here-banner electric-edge reveal-on-scroll">
           <div class="start-here-text">
             <span class="section-kicker">PERSONAL POSSIBILITY ENGINE</span>
             <h2 class="text-h2" style="font-size: 1.85rem;">Don't pick a job title. Map your possibilities.</h2>
@@ -160,6 +275,7 @@
             </p>
           </div>
           <a href="discover.html" class="btn btn-primary">
+            <span class="btn-energy-spark">✦</span>
             <span>LAUNCH YOUR MAP</span>
             <span aria-hidden="true">→</span>
           </a>
@@ -167,24 +283,230 @@
       </div>
     </section>
 
-    <!-- 4. Possibility Map Preview -->
-    <section class="section">
+    <!-- 3B. "YOUR NEXT MOVE STARTS HERE." Pathways Section -->
+    <section class="section" id="next-move-section">
       <div class="site-container">
-        <div class="section-header" style="text-align: center; max-width: 720px; margin-left: auto; margin-right: auto;">
-          <span class="section-kicker">SIGNATURE MOTIF</span>
-          <h2 class="text-h2">Branching Pathways, Not Dead Ends</h2>
-          <p class="text-lead" style="margin-top: 8px;">
-            Unlike traditional job boards that discard candidates without experience, ORBIT reveals every bridge: from basic skills to practical portfolios, learnership stipends, and junior roles.
+        <div class="section-header">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="opp-pulse" aria-hidden="true">
+              <span class="opp-pulse-ring"></span>
+              <span class="opp-pulse-core"></span>
+              <span class="opp-pulse-ray"></span>
+            </span>
+            <span class="section-kicker">TRAJECTORY SELECTOR</span>
+          </div>
+          <h2 class="text-h2 text-display">YOUR NEXT MOVE STARTS HERE.</h2>
+          <p class="text-lead">Choose your focus. Branching opportunities are structured around your immediate goals.</p>
+        </div>
+
+        <div class="next-move-grid">
+          <a href="opportunities.html?category=Jobs" class="next-move-card reveal-on-scroll">
+            <div>
+              <span class="next-move-num">01</span>
+              <h3 class="next-move-title">FIND WORK</h3>
+              <p class="next-move-desc">Direct entry-level jobs, matriculant openings, junior analyst and technician roles.</p>
+            </div>
+            <div class="next-move-arrow">
+              <span>EXPLORE ROLES</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="opportunities.html?category=Courses" class="next-move-card reveal-on-scroll">
+            <div>
+              <span class="next-move-num">02</span>
+              <h3 class="next-move-title">BUILD SKILLS</h3>
+              <p class="next-move-desc">Free accredited tech courses, software engineering bootcamps, and AI literacies.</p>
+            </div>
+            <div class="next-move-arrow">
+              <span>EXPLORE COURSES</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="opportunities.html?category=Learnerships" class="next-move-card reveal-on-scroll">
+            <div>
+              <span class="next-move-num">03</span>
+              <h3 class="next-move-title">GET EXPERIENCE</h3>
+              <p class="next-move-desc">SETA learnerships with monthly stipends and paid corporate workplace residencies.</p>
+            </div>
+            <div class="next-move-arrow">
+              <span>VIEW LEARNERSHIPS</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="resources.html" class="next-move-card reveal-on-scroll">
+            <div>
+              <span class="next-move-num">04</span>
+              <h3 class="next-move-title">START SOMETHING</h3>
+              <p class="next-move-desc">Youth entrepreneurship grants, creative freelance playbooks, and startup incubators.</p>
+            </div>
+            <div class="next-move-arrow">
+              <span>VIEW TOOLKITS</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <a href="opportunities.html?category=Events" class="next-move-card reveal-on-scroll">
+            <div>
+              <span class="next-move-num">05</span>
+              <h3 class="next-move-title">MEET OPPORTUNITY</h3>
+              <p class="next-move-desc">Virtual recruitment showcases, industry webinars, and coding hackathons across SA.</p>
+            </div>
+            <div class="next-move-arrow">
+              <span>JOIN EVENTS</span>
+              <span aria-hidden="true">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DIGITAL OPPORTUNITY MAP: South African Youth Opportunity Ecosystem -->
+    <section class="section" id="digital-map-section">
+      <div class="site-container">
+        <div class="section-header" style="text-align: center; max-width: 760px; margin: 0 auto 36px;">
+          <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <span class="opp-pulse" aria-hidden="true">
+              <span class="opp-pulse-ring"></span>
+              <span class="opp-pulse-core"></span>
+              <span class="opp-pulse-ray"></span>
+            </span>
+            <span class="section-kicker">NETWORK TOPOLOGY</span>
+          </div>
+          <h2 class="text-h2 text-display">DIGITAL OPPORTUNITY ECOSYSTEM</h2>
+          <p class="text-lead">
+            Opportunities are connected across South Africa. Click any city node to inspect live opportunity activity.
           </p>
         </div>
 
-        <div class="map-canvas-container" style="text-align: center; padding: 48px 24px;">
-          <img src="/assets/images/hero.svg" alt="Preview of Possibility Map" style="max-height: 380px; width: 100%; object-fit: contain; border-radius: var(--radius-md);" />
-          <div style="margin-top: 24px;">
-            <a href="discover.html" class="btn btn-secondary">
-              <span>EXPLORE FULL INTERACTIVE MAPPER</span>
-              <span aria-hidden="true">→</span>
-            </a>
+        <div class="sa-network-card electric-edge reveal-on-scroll">
+          <div class="sa-network-grid">
+            <!-- Visual Network Canvas (Futuristic SA Data Viz) -->
+            <div class="sa-map-canvas-wrap">
+              <svg class="sa-map-svg" viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Futuristic South African Opportunity Network Map">
+                <!-- Ambient circuit grid lines -->
+                <defs>
+                  <linearGradient id="netGlowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0066ff" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.8"/>
+                  </linearGradient>
+                  <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="4"/>
+                  </filter>
+                </defs>
+
+                <!-- Subtle outline representation of SA regional boundary traces -->
+                <path d="M120 340 L160 370 L230 380 L310 375 L450 300 L490 240 L450 170 L400 90 L340 70 L280 130 L210 180 L140 260 Z" stroke="rgba(0, 229, 255, 0.08)" stroke-width="1.5" fill="none" stroke-dasharray="2 6"/>
+
+                <!-- Network interconnecting circuit lines -->
+                <line x1="140" y1="360" x2="310" y2="250" class="sa-net-line"/>
+                <line x1="140" y1="360" x2="280" y2="375" class="sa-net-line"/>
+                <line x1="280" y1="375" x2="460" y2="280" class="sa-net-line"/>
+                <line x1="310" y1="250" x2="370" y2="140" class="sa-net-line"/>
+                <line x1="460" y1="280" x2="370" y2="140" class="sa-net-line"/>
+                <line x1="370" y1="140" x2="380" y2="95" class="sa-net-line"/>
+
+                <!-- Traveling Data Pulses (SVG Animations) -->
+                <circle r="3" fill="#00e5ff">
+                  <animateMotion path="M140 360 L310 250" dur="4s" repeatCount="indefinite" />
+                </circle>
+                <circle r="3" fill="#7ef9c6">
+                  <animateMotion path="M310 250 L370 140" dur="3s" repeatCount="indefinite" />
+                </circle>
+                <circle r="3" fill="#0066ff">
+                  <animateMotion path="M460 280 L370 140" dur="3.5s" repeatCount="indefinite" />
+                </circle>
+
+                <!-- Nodes -->
+                <!-- 1. CAPE TOWN -->
+                <g class="sa-node-group" data-city-node="cape-town" transform="translate(140, 360)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="10"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="5"/>
+                  <text class="sa-node-label" x="0" y="-14">CAPE TOWN</text>
+                  <text class="sa-node-sub" x="0" y="-4">124 Opps</text>
+                </g>
+
+                <!-- 2. GQEBERHA -->
+                <g class="sa-node-group" data-city-node="gqeberha" transform="translate(280, 375)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="9"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="4.5"/>
+                  <text class="sa-node-label" x="0" y="16">GQEBERHA</text>
+                  <text class="sa-node-sub" x="0" y="26">48 Opps</text>
+                </g>
+
+                <!-- 3. BLOEMFONTEIN -->
+                <g class="sa-node-group" data-city-node="bloemfontein" transform="translate(310, 250)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="9"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="4.5"/>
+                  <text class="sa-node-label" x="-8" y="-12">BLOEMFONTEIN</text>
+                  <text class="sa-node-sub" x="-8" y="-2">37 Opps</text>
+                </g>
+
+                <!-- 4. DURBAN -->
+                <g class="sa-node-group" data-city-node="durban" transform="translate(460, 280)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="10"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="5"/>
+                  <text class="sa-node-label" x="0" y="16">DURBAN</text>
+                  <text class="sa-node-sub" x="0" y="26">92 Opps</text>
+                </g>
+
+                <!-- 5. JOHANNESBURG -->
+                <g class="sa-node-group active" data-city-node="johannesburg" transform="translate(370, 140)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="12"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="6"/>
+                  <text class="sa-node-label" x="0" y="-14">JOHANNESBURG</text>
+                  <text class="sa-node-sub" x="0" y="-4">186 Opps</text>
+                </g>
+
+                <!-- 6. PRETORIA -->
+                <g class="sa-node-group" data-city-node="pretoria" transform="translate(380, 95)">
+                  <circle class="sa-node-ring" cx="0" cy="0" r="10"/>
+                  <circle class="sa-node-dot" cx="0" cy="0" r="5"/>
+                  <text class="sa-node-label" x="24" y="4">PRETORIA</text>
+                  <text class="sa-node-sub" x="24" y="14">115 Opps</text>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Telemetry Inspector Panel -->
+            <div class="sa-telemetry-panel">
+              <div class="telemetry-status-header">
+                <div>
+                  <span class="section-kicker" style="font-size: 11px;">ACTIVE NODE TELEMETRY</span>
+                  <h3 id="network-telemetry-city" class="telemetry-city-title">Johannesburg (Gauteng)</h3>
+                </div>
+                <span class="active-dot-beacon" title="Node Online"></span>
+              </div>
+
+              <div class="telemetry-stats-list">
+                <div class="telemetry-stat-row">
+                  <span style="color: var(--text-muted);">ACTIVE OPPORTUNITIES</span>
+                  <strong id="network-telemetry-count" style="color: var(--color-cyber-cyan); font-family: var(--font-mono); font-size: 1rem;">186 Active Opportunities</strong>
+                </div>
+                <div class="telemetry-stat-row">
+                  <span style="color: var(--text-muted);">LEADING SECTORS</span>
+                  <span id="network-telemetry-sectors" style="color: var(--text-primary); font-weight: 500;">FinTech, Enterprise Engineering, Data</span>
+                </div>
+                <div class="telemetry-stat-row">
+                  <span style="color: var(--text-muted);">STIPEND / SALARY BAND</span>
+                  <span id="network-telemetry-stipend" style="color: var(--color-mint); font-family: var(--font-mono);">R9,200 – R26,500 / month</span>
+                </div>
+              </div>
+
+              <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 10px;">
+                <a id="network-telemetry-filter-btn" href="opportunities.html?province=Gauteng" class="btn btn-primary btn-sm" style="width: 100%;">
+                  <span class="btn-energy-spark">✦</span>
+                  <span>FILTER THIS CITY</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a href="discover.html" class="btn btn-secondary btn-sm" style="width: 100%;">
+                  <span>OPEN FULL INTERACTIVE MAPPER</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -209,12 +531,19 @@
     <section class="section" id="search-section">
       <div class="site-container">
         <div class="section-header">
-          <span class="section-kicker">DISCOVERY ENGINE</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="opp-pulse" aria-hidden="true">
+              <span class="opp-pulse-ring"></span>
+              <span class="opp-pulse-core"></span>
+              <span class="opp-pulse-ray"></span>
+            </span>
+            <span class="section-kicker">DISCOVERY ENGINE</span>
+          </div>
           <h2 class="text-h2">Find Your Next Move</h2>
           <p class="text-lead">Filter real opportunities across category, province, and experience levels.</p>
         </div>
 
-        <div class="search-engine-box">
+        <div class="search-engine-box electric-edge reveal-on-scroll">
           <div class="search-input-wrapper">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);">
               <circle cx="11" cy="11" r="8"></circle>
@@ -256,6 +585,7 @@
             </select>
 
             <a id="home-discover-btn" href="opportunities.html" class="btn btn-primary" style="margin-left: auto;">
+              <span class="btn-energy-spark">✦</span>
               <span>DISCOVER ALL</span>
               <span aria-hidden="true">→</span>
             </a>
@@ -271,7 +601,14 @@
     <section class="section">
       <div class="site-container">
         <div class="section-header">
-          <span class="section-kicker">EDITORIAL SPOTLIGHT</span>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span class="opp-pulse" aria-hidden="true">
+              <span class="opp-pulse-ring"></span>
+              <span class="opp-pulse-core"></span>
+              <span class="opp-pulse-ray"></span>
+            </span>
+            <span class="section-kicker">EDITORIAL SPOTLIGHT</span>
+          </div>
           <h2 class="text-h2">Today's Possibility</h2>
         </div>
         <div id="todays-possibility-slot"></div>
@@ -283,7 +620,14 @@
       <div class="site-container">
         <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
           <div>
-            <span class="section-kicker">CURATED ROSTER</span>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="opp-pulse" aria-hidden="true">
+                <span class="opp-pulse-ring"></span>
+                <span class="opp-pulse-core"></span>
+                <span class="opp-pulse-ray"></span>
+              </span>
+              <span class="section-kicker">CURATED ROSTER</span>
+            </div>
             <h2 class="text-h2">Featured Opportunities</h2>
           </div>
           <a href="opportunities.html" class="btn btn-secondary btn-sm">

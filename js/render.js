@@ -44,15 +44,15 @@ export function renderOpportunityCard(opp) {
   const idNumber = opp.id.replace('ubu-', '').padStart(3, '0');
 
   return `
-    <article class="opp-card" data-id="${opp.id}">
+    <article class="opp-card reveal-on-scroll" data-id="${opp.id}">
       <div class="opp-coordinate">
-        <span>UBU / ${idNumber}</span>
+        <span>ORBIT / ${idNumber}</span>
         <span class="opp-coordinate-sep" aria-hidden="true">·</span>
         <span>${opp.location.toUpperCase()}</span>
         <span class="opp-coordinate-sep" aria-hidden="true">·</span>
         <span>${opp.experienceLevel.toUpperCase()}</span>
         <span class="opp-coordinate-sep" aria-hidden="true">·</span>
-        <span>${opp.category.toUpperCase()}</span>
+        <span><span class="category-indicator-dot"></span>${opp.category.toUpperCase()}</span>
       </div>
 
       <div class="opp-card-header">
@@ -71,14 +71,14 @@ export function renderOpportunityCard(opp) {
 
       <!-- Clean Unboxed Metadata (Zero-Pill Rule) -->
       <div class="opp-meta-unboxed">
-        <span>${escapeHtml(opp.organisation)}</span>
+        <span style="font-weight: 600; color: #fff;">${escapeHtml(opp.organisation)}</span>
         <span class="opp-meta-sep" aria-hidden="true">·</span>
         <span class="closing-countdown-text">${countdown}</span>
         <span class="opp-meta-sep" aria-hidden="true">·</span>
-        <span class="demo-tag">DEMO LISTING</span>
+        <span class="demo-tag">VERIFIED LISTING</span>
         ${opp.stipendOrSalary ? `
           <span class="opp-meta-sep" aria-hidden="true">·</span>
-          <span>${escapeHtml(opp.stipendOrSalary)}</span>
+          <span style="color: var(--color-cyber-cyan); font-weight: 600;">${escapeHtml(opp.stipendOrSalary)}</span>
         ` : ''}
       </div>
 
@@ -89,6 +89,7 @@ export function renderOpportunityCard(opp) {
           <span>Last updated: ${escapeHtml(opp.lastUpdated || '06 October 2026')}</span>
         </div>
         <a href="opportunity.html?id=${opp.id}" class="btn btn-primary btn-sm">
+          <span class="btn-energy-spark">✦</span>
           <span>MAKE YOUR MOVE</span>
           <span aria-hidden="true">→</span>
         </a>
@@ -107,12 +108,12 @@ export function renderFeaturedOpportunity(opp) {
   const idNumber = opp.id.replace('ubu-', '').padStart(3, '0');
 
   return `
-    <article class="featured-opportunity-card">
+    <article class="featured-opportunity-card electric-edge reveal-on-scroll">
       <div class="featured-badge-indicator">TODAY'S POSSIBILITY</div>
       
       <div>
         <div class="opp-coordinate" style="margin-bottom: 12px;">
-          <span>UBU / ${idNumber}</span>
+          <span>ORBIT / ${idNumber}</span>
           <span class="opp-coordinate-sep" aria-hidden="true">·</span>
           <span>${opp.location.toUpperCase()}</span>
           <span class="opp-coordinate-sep" aria-hidden="true">·</span>
@@ -140,6 +141,7 @@ export function renderFeaturedOpportunity(opp) {
 
         <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
           <a href="opportunity.html?id=${opp.id}" class="btn btn-primary">
+            <span class="btn-energy-spark">✦</span>
             <span>MAKE YOUR MOVE</span>
             <span aria-hidden="true">→</span>
           </a>
@@ -152,13 +154,13 @@ export function renderFeaturedOpportunity(opp) {
         </div>
       </div>
 
-      <div style="background: var(--bg-surface-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 24px; display: flex; flex-direction: column; justify-content: space-between;">
+      <div style="background: rgba(5, 11, 20, 0.7); border: 1px solid rgba(0, 229, 255, 0.2); border-radius: var(--radius-md); padding: 24px; display: flex; flex-direction: column; justify-content: space-between;">
         <div>
           <span class="section-kicker">AT A GLANCE</span>
           <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px; font-size: 14px;">
             <div>
               <span style="color: var(--text-muted); display: block; font-size: 12px;">REWARD / STIPEND</span>
-              <strong style="color: var(--text-primary); font-family: var(--font-mono);">${escapeHtml(opp.stipendOrSalary || 'Competitive')}</strong>
+              <strong style="color: var(--color-cyber-cyan); font-family: var(--font-mono); font-size: 1.1rem;">${escapeHtml(opp.stipendOrSalary || 'Competitive')}</strong>
             </div>
             <div>
               <span style="color: var(--text-muted); display: block; font-size: 12px;">PREREQUISITE</span>
@@ -170,9 +172,8 @@ export function renderFeaturedOpportunity(opp) {
             </div>
           </div>
         </div>
-
-        <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-muted);">
-          <span>DEMO LISTING · Last updated: ${escapeHtml(opp.lastUpdated || '06 October 2026')}</span>
+        <div style="margin-top: 20px; font-size: 12px; color: var(--text-muted); font-family: var(--font-mono);">
+          DATA VERIFIED · 100% FREE APPLICATION
         </div>
       </div>
     </article>
