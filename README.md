@@ -1,7 +1,6 @@
-# ORBIT — South African Youth Career Discovery Platform
+# ORBIT
 
 > *"Map your move."*  
-> *"More than an opportunity. A way forward."*
 
 **ORBIT** is a futurist digital career-discovery platform designed specifically for South African youth.
 
